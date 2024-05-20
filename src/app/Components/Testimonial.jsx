@@ -46,7 +46,7 @@ const Testimonial = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className=" absolute top-[-15%] flex justify-center items-center right-8 bg-white h-10 hover:text-white hover:bg-[#cf2e2e] w-16 text-xl rounded-lg "
+        className=" absolute top-[-10%] lg:top-[-15%] flex justify-center items-center right-8 bg-white h-10 hover:text-white hover:bg-[#cf2e2e] w-16 text-xl rounded-lg "
         onClick={onClick}
       >
         <IoMdArrowRoundForward />{" "}
@@ -58,7 +58,7 @@ const Testimonial = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className=" absolute top-[-15%] flex justify-center items-center left-8 bg-white h-10 w-16 text-xl rounded-md hover:text-white hover:bg-[#cf2e2e] z-10"
+        className=" absolute top-[-10%] lg:top-[-15%] flex justify-center items-center left-8 bg-white h-10 w-16 text-xl rounded-md hover:text-white hover:bg-[#cf2e2e] z-10"
         onClick={onClick}
       >
         <IoMdArrowRoundBack />
