@@ -53,14 +53,18 @@ const LatestBlog = () => {
               key={key}
             >
               <a href={items.href}>
-                <Image
-                  src={items.img}
-                  loading="lazy"
-                  alt={items.title}
-                  className="w-full h-48 rounded-t-md"
-                  width={500}
-                  height={200}
-                />
+                <div class="relative">
+                  <Image
+                    src={items.img}
+                    loading="lazy"
+                    alt={items.title}
+                    className="w-full h-full rounded-t-md"
+                    width={500}
+                    height={400}
+                  />
+                  <div class="absolute inset-0 bg-[#cf2e2ea8] opacity-0 hover:opacity-65 transition-opacity duration-300 rounded-t-md"></div>
+                </div>
+
                 <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
                   <div className="flex-none w-10 h-10 rounded-full">
                     <Image

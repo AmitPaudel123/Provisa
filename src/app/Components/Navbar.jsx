@@ -20,7 +20,7 @@ const Navbar = () => {
   const [showPreparation, setShowPreparation] = useState(false);
 
   return (
-    <nav className="shadow-black shadow-sm relative bg-white">
+    <nav className="shadow-black shadow-sm fixed top-0 z-[999] w-full bg-white ">
       <div className="bg-[#cf2e2e] text-white py-3  flex justify-evenly lg:px-2 xl:px-8 items-center text-xs">
         <div className="flex items-center space-x-4">
           <a href="https://facebook.com" target="_blank" className="text-lg">

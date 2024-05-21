@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import Image from "next/image";
-// import "./testimonial.css";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
@@ -97,16 +96,16 @@ const Testimonial = () => {
     <div>
       <section className="relative py-14">
         <div className="relative z-10 mx-auto px-4 md:px-8">
-          <div className="w-full sm:text-center text-3xl font-bold md:mx-auto">
+          <div className=" sm:text-center text-3xl font-bold md:mx-auto">
             {"Student's Testimonials"}
           </div>
           <div className="mt-12">
-            <ul className="">
+            <ul>
               <Slider {...settings}>
                 {testimonials.map((item, idx) => (
                   <li
                     key={idx}
-                    className="bg-white rounded-xl border shadow-md"
+                    className="bg-white w-10 rounded-xl border shadow-md "
                   >
                     <div className="p-4">
                       <svg

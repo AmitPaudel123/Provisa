@@ -9,9 +9,9 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer class="text-slate-300 bg-slate-900">
+      <footer class="text-slate-300 bg-slate-900 ">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div class="md:flex md:justify-between">
+          <div class=" flex flex-col gap-2 lg:gap-1 lg:flex-row md:justify-between">
             <div class="mb-6 md:mb-0">
               <a href="" class="flex  flex-col">
                 <Image
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="flex flex-col md:flex-row flex-shrink-0 justify-between gap-3 lg:w-[70%]">
               <div>
                 <h2 class="mb-4 text-2xl font-semibold">Quick Links</h2>
                 <ul class=" font-medium flex flex-col gap-2">
@@ -69,15 +69,15 @@ const Footer = () => {
                   <div className=" flex gap-1">
                     {" "}
                     <MdLocationPin className=" text-2xl" />
-                    Laxmi Plaza, Putalisadak, Padmodaya Mode, Kathmandu, Nepal
+                    Laxmi Plaza, Putalisadak, Padmodaya <br />
+                    Mode,Kathmandu, Nepal
                   </div>
                   <div className=" flex gap-1 items-center">
                     {" "}
                     <FaPhoneAlt /> +9779851101782, 01-4531819
                   </div>
                   <div className=" flex gap-1 items-center">
-                    {" "}
-                    <RiMailOpenFill /> admin@provisa.com.np
+                    <RiMailOpenFill className=" text-lg" /> admin@provisa.com.np
                   </div>
                 </div>
               </div>
