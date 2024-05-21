@@ -10,7 +10,7 @@ const Description = () => {
   return (
     <div className=" my-5">
       <div className=" bg-white text-slate-600 text-center px-2 lg:px-[9rem] my-16">
-        <h1 className=" text-[#8b37d8] font-semibold text-2xl">
+        <h1 className=" text-[#8b37d8] font-semibold text-2xl mb-2">
           PROFESSIONAL VISA AND EDUCATION SERVICES
         </h1>
         <p className=" h-fit">
@@ -40,7 +40,7 @@ const Description = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-[#cf2e2e] opacity-50 z-10"></div>
+          <div className="absolute inset-0  bg-gradient-to-tr from-blue-500 to-red-500 opacity-60 z-10"></div>
 
           {/* Foreground Content */}
           <div className="relative z-20 flex flex-col md:flex-row items-center justify-between h-full text-white gap-2 lg:px-[18rem]">

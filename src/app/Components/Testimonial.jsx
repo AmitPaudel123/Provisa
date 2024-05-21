@@ -103,9 +103,9 @@ const Testimonial = () => {
             <ul>
               <Slider {...settings}>
                 {testimonials.map((item, idx) => (
-                  <li
+                  <div
                     key={idx}
-                    className="bg-white w-10 rounded-xl border shadow-md "
+                    className="bg-white w-10 rounded-xl border shadow-md mr-4"
                   >
                     <div className="p-4">
                       <svg
@@ -144,7 +144,7 @@ const Testimonial = () => {
                         </div>
                       </div>
                     </figure>
-                  </li>
+                  </div>
                 ))}
               </Slider>
             </ul>

@@ -10,7 +10,7 @@ import Description from "./Components/Description";
 
 const page = () => {
   return (
-    <div className=" bg-white">
+    <div className=" bg-white overflow-y-hidden">
       <HomeSlider />
       <Description />
       <AssistCard />

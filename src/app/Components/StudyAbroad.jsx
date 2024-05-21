@@ -34,7 +34,7 @@ const images = [
 
 const LargeImageCard = ({ title, description, imageSrc }) => {
   return (
-    <div className="relative group overflow-hidden rounded-lg shadow-lg h-96 lg:h-full">
+    <div className="relative group overflow-hidden rounded-lg shadow-lg h-[30rem]">
       <div className="relative w-full h-full">
         <Image
           src={imageSrc}
@@ -64,7 +64,7 @@ const LargeImageCard = ({ title, description, imageSrc }) => {
 
 const SmallImageCard = ({ title, description, imageSrc }) => {
   return (
-    <div className="relative group overflow-hidden rounded-lg shadow-lg h-60">
+    <div className="relative group overflow-hidden rounded-lg shadow-lg h-[15rem]">
       <div className="relative w-full h-full">
         <Image
           src={imageSrc}
@@ -97,7 +97,7 @@ const ImageGrid = () => {
   const smallImages = images.slice(1, 5);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto p-4">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 max-w-7xl mx-auto p-4">
       <div className="lg:col-span-2">
         <LargeImageCard
           title={largeImage.title}
@@ -105,7 +105,7 @@ const ImageGrid = () => {
           imageSrc={largeImage.imageSrc}
         />
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
         {smallImages.map((image, index) => (
           <SmallImageCard
             key={index}
@@ -122,9 +122,9 @@ const ImageGrid = () => {
 const StudyAbroad = () => {
   return (
     <div>
-      <div className=" flex flex-col items-center">
-        <p className=" text-[#8b37d8] font-bold text-2xl">Study Abroad </p>
-        <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
+      <div className="flex flex-col items-center mb-4">
+        <p className="text-[#8b37d8] font-bold text-2xl">Study Abroad</p>
+        <p className="h-[0.3rem] bg-[#cf2e2e] w-14"></p>
       </div>
       <ImageGrid />
     </div>

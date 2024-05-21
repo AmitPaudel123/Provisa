@@ -46,33 +46,51 @@ const HomeSlider = () => {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       <Slider {...settings}>
-        <div className="relative h-screen w-screen">
+        <div className="relative bg-gradient-to-tr from-blue-400 to-red-300 h-screen w-screen bg-cover ">
           <Image
             src="/sliderimg1.webp"
             alt="slider"
             layout="fill"
             objectFit="cover"
             priority={true}
-            className=" relative"
+            className="  object-cover absolute mix-blend-overlay"
           />
+          <div className=" px-[32rem] py-[24rem]">
+            <p className=" text-white px-4 py-3 text-3xl font-semibold  text-center bg-black border-white border-[2px]">
+              Welcome to Professional Visa <br /> & Education Service
+            </p>
+          </div>
         </div>
-        <div className="relative h-screen w-screen">
+        <div className="relative bg-gradient-to-tr from-blue-500 to-red-500 h-screen w-screen bg-cover ">
           <Image
             src="/sliderimg2.webp"
             alt="slider"
             layout="fill"
             objectFit="cover"
             priority={true}
+            className="  object-cover absolute mix-blend-overlay"
           />
+          <div className=" px-[32rem] py-[24rem]">
+            <p className=" text-white text-2xl text-center py-5 px-4 font-semibold  bg-black border-white border-[2px]">
+              GRAB 50% OFF ON IELTS & PTE{" "}
+            </p>
+          </div>
         </div>
-        <div className="relative h-screen w-screen">
+        <div className="relative bg-gradient-to-tr from-blue-400 to-red-500 h-screen w-screen bg-cover ">
           <Image
             src="/sliderimg3.jpg"
             alt="slider"
             layout="fill"
             objectFit="cover"
             priority={true}
+            className="  object-cover absolute mix-blend-overlay"
           />
+          <div className=" px-[32rem] py-[24rem] ">
+            <p className=" text-white text-center hover:animate-bounce bg-black px-1 border-white border-[2px] w-fit py-3 text-2xl font-semibold ">
+              WE CAN HELP YOU LIVE THE <br /> LIFE YOU HAVE BEEN DREAMING OF We
+              can help you live the life you have been dreaming of
+            </p>
+          </div>
         </div>
       </Slider>
     </div>
