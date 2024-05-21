@@ -53,6 +53,7 @@ const HomeSlider = () => {
             layout="fill"
             objectFit="cover"
             priority={true}
+            className=" relative"
           />
         </div>
         <div className="relative h-screen w-screen">

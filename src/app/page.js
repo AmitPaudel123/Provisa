@@ -6,11 +6,13 @@ import Universities from "./Universities";
 import LatestBlog from "./Components/LatestBlog";
 import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
+import Description from "./Components/Description";
 
 const page = () => {
   return (
     <div className=" bg-white">
       <HomeSlider />
+      <Description />
       <AssistCard />
       <StudyAbroad />
       <Testimonial />

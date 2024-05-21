@@ -50,7 +50,7 @@ const AssistCard = () => {
             return (
               <Link
                 href="/"
-                className="border rounded-lg hover:scale-105 duration-100 hover:shadow-md hover:shadow-black shadow-sm"
+                className="border rounded-lg hover:scale-105 hover:shadow-sm duration-150 hover:shadow-slate-400 shadow-sm"
                 key={idx}
               >
                 <div className="flex items-start justify-between p-4">

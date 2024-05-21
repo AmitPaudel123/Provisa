@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   FaFacebookF,
@@ -19,62 +19,83 @@ const Navbar = () => {
   const [showAbroadStd, setShowAbroadStd] = useState(false);
   const [showPreparation, setShowPreparation] = useState(false);
 
-  return (
-    <nav className="shadow-black shadow-sm fixed top-0 z-[999] w-full bg-white ">
-      <div className="bg-[#cf2e2e] text-white py-3  flex justify-evenly lg:px-2 xl:px-8 items-center text-xs">
-        <div className="flex items-center space-x-4">
-          <a href="https://facebook.com" target="_blank" className="text-lg">
-            <FaFacebookF className=" hover:bg-white hover:text-orange-500" />
-          </a>
-          <span className="h-4 w-px bg-slate-600"></span>
-          <a href="https://instagram.com" target="_blank" className="text-lg">
-            <FaInstagram className=" hover:bg-white hover:text-orange-500" />
-          </a>
-          <span className="h-4 w-px bg-slate-600"></span>
-          <a href="https://twitter.com" target="_blank" className="text-lg">
-            <FaTwitter className=" hover:bg-white hover:text-orange-500" />
-          </a>
-          <span className="h-4 w-px bg-slate-600"></span>
-          <a href="https://youtube.com" target="_blank" className="text-lg">
-            <FaYoutube className=" hover:bg-white hover:text-orange-500" />
-          </a>
-        </div>
+  const [hideNav, setHideNav] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 100) {
+        setHideNav(false);
+      } else {
+        setHideNav(true);
+      }
+    };
 
-        <div className=" flex items-center gap-[0.15rem]">
-          {" "}
-          <FaPhoneAlt /> +9779851101782
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <nav className="shadow-slate-400 shadow-sm fixed top-0 z-[999] w-full bg-white ">
+      {/* top navbar */}
+      {hideNav && (
+        <div className="bg-[#cf2e2e] text-white py-3  flex justify-evenly lg:px-2 xl:px-8 items-center text-xs">
+          <div className="flex items-center space-x-4">
+            <a href="https://facebook.com" target="_blank" className="text-lg">
+              <FaFacebookF className=" hover:bg-white hover:text-orange-500" />
+            </a>
+            <span className="h-4 w-px bg-slate-600"></span>
+            <a href="https://instagram.com" target="_blank" className="text-lg">
+              <FaInstagram className=" hover:bg-white hover:text-orange-500" />
+            </a>
+            <span className="h-4 w-px bg-slate-600"></span>
+            <a href="https://twitter.com" target="_blank" className="text-lg">
+              <FaTwitter className=" hover:bg-white hover:text-orange-500" />
+            </a>
+            <span className="h-4 w-px bg-slate-600"></span>
+            <a href="https://youtube.com" target="_blank" className="text-lg">
+              <FaYoutube className=" hover:bg-white hover:text-orange-500" />
+            </a>
+          </div>
+
+          <div className=" flex items-center gap-[0.15rem]">
+            {" "}
+            <FaPhoneAlt /> +9779851101782
+          </div>
+          <div className=" flex items-center gap-[0.15rem]">
+            {" "}
+            <RiMailOpenFill /> admin@provisa.com.np
+          </div>
+          <div className=" flex items-center gap-[0.15rem]">
+            <MdLocationPin />
+            Laxmi Plaza, Putalisadak, Padmodaya Mode, Kathmandu,Nepal
+          </div>
         </div>
-        <div className=" flex items-center gap-[0.15rem]">
-          {" "}
-          <RiMailOpenFill /> admin@provisa.com.np
-        </div>
-        <div className=" flex items-center gap-[0.15rem]">
-          <MdLocationPin />
-          Laxmi Plaza, Putalisadak, Padmodaya Mode, Kathmandu,Nepal
-        </div>
-      </div>
+      )}
 
       {/* logo section */}
-      <div className=" flex items-center justify-between px-5 xl:px-0 lg:w-[90%] xl:w-[75%]  mx-auto border-b-[1px] border-b-orange-500">
-        <Image src="/logo.png" alt="company logo" width={250} height={20} />
-        <div className=" flex items-center gap-10">
-          <div className=" flex items-center gap-[0.15rem]">
-            <FaPhoneAlt className=" text-2xl font-bold text-slate-600" />
-            <p className=" text-sm">
-              Speak with us: <br />{" "}
-              <span className=" text-xl text-orange-500 font-semibold">
-                +9779851101782
-              </span>
-            </p>
+      {hideNav && (
+        <div className=" flex items-center justify-between px-5 xl:px-0 lg:w-[90%] xl:w-[75%]  mx-auto border-b-[1px] border-b-orange-500">
+          <Image src="/logo.png" alt="company logo" width={250} height={20} />
+          <div className=" flex items-center gap-10">
+            <div className=" flex items-center gap-[0.15rem]">
+              <FaPhoneAlt className=" text-2xl font-bold text-slate-600" />
+              <p className=" text-sm">
+                Speak with us: <br />{" "}
+                <span className=" text-xl text-orange-500 font-semibold">
+                  +9779851101782
+                </span>
+              </p>
+            </div>
+            <button className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm">
+              Book an Appointment
+            </button>
           </div>
-          <button className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm">
-            Book an Appointment
-          </button>
         </div>
-      </div>
+      )}
 
       {/* link section */}
-      <div className="lg:w-[80%] xl:w-[70%] mx-auto flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 z-10">
+      <div className="lg:w-[80%] xl:w-[70%] mx-auto flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 z-10 py-1">
         <p className="pb-4 cursor-pointer">Home</p>
         <div
           div

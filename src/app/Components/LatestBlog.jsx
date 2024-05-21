@@ -40,7 +40,7 @@ const LatestBlog = () => {
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
           </div>{" "}
           <p className="mt-3 text-gray-500">
-            Blogs that are loved by the community. Updated every hour.
+            Blogs that are loved by the community.
           </p>
         </div>
         <Link href="/" className=" text-blue-600 float-right">
