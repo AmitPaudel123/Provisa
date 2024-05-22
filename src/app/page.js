@@ -8,19 +8,23 @@ import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
 import Description from "./Components/Description";
 import Faq from "./Components/Faq";
+import GoTop from "./Components/GoTop";
+import FloatingBtn from "./Components/FloatingBtn";
 
 const page = () => {
   return (
-    <div className=" bg-white">
-      {/* <HomeSlider />
+    <div className=" bg-white overflow-x-hidden">
+      <FloatingBtn />
+      <GoTop />
+      <HomeSlider />
       <Description />
       <AssistCard />
       <StudyAbroad />
       <Testimonial />
       <FormSection />
       <LatestBlog />
-      <Universities /> */}
-      <Faq />
+      <Universities />
+      {/* <Faq /> */}
     </div>
   );
 };
