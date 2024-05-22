@@ -14,8 +14,6 @@ import FloatingBtn from "./Components/FloatingBtn";
 const page = () => {
   return (
     <div className=" bg-white overflow-x-hidden">
-      <FloatingBtn />
-      <GoTop />
       <HomeSlider />
       <Description />
       <AssistCard />
