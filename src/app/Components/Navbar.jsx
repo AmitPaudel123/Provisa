@@ -102,9 +102,12 @@ const Navbar = () => {
                 </span>
               </p>
             </div>
-            <button className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm">
+            <Link
+              href="/appointment"
+              className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm"
+            >
               Book an Appointment
-            </button>
+            </Link>
           </div>
         </div>
       )}
@@ -320,9 +323,12 @@ const Navbar = () => {
                 </span>
               </p>
             </div>
-            <button className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm">
+            <Link
+              href="/appointment"
+              className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm"
+            >
               Book an Appointment
-            </button>
+            </Link>
           </div>
         </div>
       )}
