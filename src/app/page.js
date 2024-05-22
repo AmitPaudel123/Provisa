@@ -8,8 +8,6 @@ import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
 import Description from "./Components/Description";
 import Faq from "./Components/Faq";
-import GoTop from "./Components/GoTop";
-import FloatingBtn from "./Components/FloatingBtn";
 
 const page = () => {
   return (

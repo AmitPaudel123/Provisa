@@ -94,15 +94,6 @@ const FaqPage = () => {
 
   return (
     <section className="leading-relaxed max-w-screen-xl mx-auto px-4 md:px-8">
-      <div className="space-y-3 text-center">
-        <h1 className="text-3xl text-gray-900 font-semibold">
-          Frequently Asked Questions
-        </h1>
-        <p className="text-gray-600 max-w-lg mx-auto text-lg">
-          Answered all frequently asked questions, Still confused? feel free to
-          contact us.
-        </p>
-      </div>
       <div className="mt-14 max-w-2xl mx-auto">
         {faqsList.map((item, idx) => (
           <FaqsCard key={idx} idx={idx} faqsList={item} />
@@ -130,14 +121,6 @@ const ContactCard = () => {
 const Faq = () => {
   return (
     <>
-      {/* <div className=" h-[25rem] relative">
-        <Image
-          src="/faqimg.webp"
-          alt="faq_image"
-          objectFit="cover"
-          layout="fill"
-        />
-      </div> */}
       <div className="relative bg-gradient-to-tr from-slate-600 to-black h-[23rem] ">
         <Image
           src="/faqimg.webp"
@@ -151,7 +134,7 @@ const Faq = () => {
           {"FAQ'S"}
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center gap-10 mt-[10rem] py-6 px-6">
+      <div className="flex flex-col lg:flex-row justify-center gap-10 mt-[2rem] py-6 px-6">
         <div className=" w-[50%]">
           <FaqPage />
         </div>
