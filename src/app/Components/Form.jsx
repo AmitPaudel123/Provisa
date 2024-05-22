@@ -48,7 +48,7 @@ const Form = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-md">
+    <div className="bg-gray-100 p-4 rounded-md h-full">
       <h2 className="text-3xl text-[#8b37d8] font-bold mb-4">
         For Your Inquiries
       </h2>

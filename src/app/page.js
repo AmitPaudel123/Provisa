@@ -7,18 +7,20 @@ import LatestBlog from "./Components/LatestBlog";
 import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
 import Description from "./Components/Description";
+import Faq from "./Components/Faq";
 
 const page = () => {
   return (
-    <div className=" bg-white overflow-y-hidden">
-      <HomeSlider />
+    <div className=" bg-white">
+      {/* <HomeSlider />
       <Description />
       <AssistCard />
       <StudyAbroad />
       <Testimonial />
       <FormSection />
       <LatestBlog />
-      <Universities />
+      <Universities /> */}
+      <Faq />
     </div>
   );
 };
