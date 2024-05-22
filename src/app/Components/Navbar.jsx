@@ -301,7 +301,9 @@ const Navbar = () => {
           Blogs
         </div>
         <Link href="/faq">{"FAQ's"}</Link>
-        <p className="pb-4 cursor-pointer">Contact Us</p>
+        <Link className="pb-4" href="/contact">
+          Contact Us
+        </Link>
       </div>
       {/* -------------------------------------------------------------- */}
 
@@ -478,7 +480,9 @@ const Navbar = () => {
         </div>
         <div className=" flex items-center gap-1  cursor-pointer"> Blogs</div>
         <Link href="/faq">{"FAQ's"}</Link>
-        <div className="pb-4 cursor-pointer">Contact Us</div>
+        <Link href="/contact" className="pb-4 cursor-pointer">
+          Contact Us
+        </Link>
 
         <div className=" flex gap-3">
           <a className=" p-1 bg-blue-700 text-white">
