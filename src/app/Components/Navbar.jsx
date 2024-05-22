@@ -29,14 +29,17 @@ const Navbar = () => {
   const [displayServices, setDisplayServices] = useState(false);
   const [displayAbroadStd, setdisplayAbroadStd] = useState(false);
   const [displayPreparation, setDisplayPreparation] = useState(false);
+  const [hideLogo, setHideLogo] = useState(false);
 
   const [hideNav, setHideNav] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 100) {
         setHideNav(false);
+        setHideLogo(true);
       } else {
         setHideNav(true);
+        setHideLogo(false);
       }
     };
 
@@ -327,7 +330,7 @@ const Navbar = () => {
       {/* menu btn and link section */}
       {/* menu button */}
       <div
-        className=" lg:hidden bg-white shadow-sm shadow-slate-400 py-2 px-4"
+        className=" lg:hidden flex gap-6 bg-white shadow-sm shadow-slate-400 py-2 px-4"
         onClick={() => {
           setDisplayMenu(!displayMenu);
         }}
@@ -335,11 +338,14 @@ const Navbar = () => {
         <button className=" text-2xl font-bold mx-2">
           <CgMenuRight />{" "}
         </button>
+        {hideLogo && (
+          <Image src="/logo.png" alt="company logo" width={150} height={20} />
+        )}
       </div>
       {/* link section  */}
       <div
-        className={` flex flex-col lg:hidden fixed gap-4 w-[70%] md:w-[40%] h-screen bg-white top-0 left-0 z-10 py-5 pr-2b text-lg pl-7 transform transition-transform duration-300 ease-in-out ${
-          displayMenu ? "translate-x-0" : "-translate-x-full"
+        className={` flex flex-col lg:hidden fixed gap-4 w-[70%] md:w-[40%] h-screen bg-white top-0 left-0 z-10 py-5 pr-2b text-lg pl-7 transform transition-transform duration-300 ease-in-out shadow-sm shadow-black ${
+          displayMenu ? "translate-x-0" : "-translate-x-full "
         }`}
       >
         {/* close btn */}
