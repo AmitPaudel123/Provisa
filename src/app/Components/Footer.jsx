@@ -9,11 +9,11 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer class="text-slate-300 bg-slate-900 ">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-          <div class=" flex flex-col gap-2 lg:gap-1 lg:flex-row md:justify-between">
-            <div class="mb-6 md:mb-0">
-              <a href="" class="flex  flex-col">
+      <footer className="text-slate-300 bg-slate-900 ">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <div className=" flex flex-col gap-2 lg:gap-1 lg:flex-row md:justify-between">
+            <div className="mb-6 md:mb-0">
+              <a href="" className="flex  flex-col">
                 <Image
                   src="/footerlogo.png"
                   width={200}
@@ -27,10 +27,10 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            <div class="flex flex-col md:flex-row flex-shrink-0 justify-between gap-3 lg:w-[70%]">
+            <div className="flex flex-col md:flex-row flex-shrink-0 justify-between gap-3 lg:w-[70%]">
               <div>
-                <h2 class="mb-4 text-2xl font-semibold">Quick Links</h2>
-                <ul class=" font-medium flex flex-col gap-2">
+                <h2 className="mb-4 text-2xl font-semibold">Quick Links</h2>
+                <ul className=" font-medium flex flex-col gap-2">
                   <Link href="/" className=" hover:underline">
                     About Us
                   </Link>
@@ -50,8 +50,10 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 class="mb-4 text-2xl font-semibold">Test Preparation</h2>
-                <ul class=" font-medium flex flex-col gap-2">
+                <h2 className="mb-4 text-2xl font-semibold">
+                  Test Preparation
+                </h2>
+                <ul className=" font-medium flex flex-col gap-2">
                   <Link href="/" className=" hover:underline">
                     IELTS
                   </Link>
@@ -64,7 +66,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 class="mb-4 text-2xl font-semibold">Contact Us</h2>
+                <h2 className="mb-4 text-2xl font-semibold">Contact Us</h2>
                 <div className=" flex flex-col gap-2">
                   <div className=" flex gap-1">
                     {" "}
@@ -83,28 +85,28 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <hr class="my-6 sm:mx-auto lg:my-8" />
-          <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm sm:text-center">
+          <hr className="my-6 sm:mx-auto lg:my-8" />
+          <div className="sm:flex sm:items-center sm:justify-between">
+            <span className="text-sm sm:text-center">
               Copyright © 2024, Professional Visa and Education Services
               Pvt.Ltd. All Rights Reserved.
             </span>
-            <div class="flex mt-4 sm:justify-center sm:mt-0">
-              <a href="#" class="text-white">
+            <div className="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" className="text-white">
                 <FaFacebookF />
-                <span class="sr-only">Facebook page</span>
+                <span className="sr-only">Facebook page</span>
               </a>
-              <a href="#" class="text-gray-50 ms-5">
+              <a href="#" className="text-gray-50 ms-5">
                 <FaInstagram />
-                <span class="sr-only">Instagram account</span>
+                <span className="sr-only">Instagram account</span>
               </a>
-              <a href="#" class=" ms-5">
+              <a href="#" className=" ms-5">
                 <FaTwitter />
-                <span class="sr-only">Twitter page</span>
+                <span className="sr-only">Twitter page</span>
               </a>
-              <a href="#" class="ms-5">
+              <a href="#" className="ms-5">
                 <FaYoutube />
-                <span class="sr-only">Youtube</span>
+                <span className="sr-only">Youtube</span>
               </a>
             </div>
           </div>

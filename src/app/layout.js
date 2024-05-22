@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={` bg-white ${inter.className}`}>
         <GoTop />
-        <FloatingBtn />
+        {/* <FloatingBtn /> */}
         <Navbar />
         {children}
         <Footer />
