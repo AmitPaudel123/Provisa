@@ -301,26 +301,28 @@ const Navbar = () => {
 
       {/* Navbar for smaller and medium size device */}
       {/* top logo section */}
-      <div className=" flex flex-col lg:hidden items-start justify-between md:px-5 py-2 mx-auto border-b-[1px] border-b-orange-500 ">
-        <div className=" flex justify-center md:justify-start w-full">
-          <Image src="/logo.png" alt="company logo" width={250} height={20} />
-        </div>
-
-        <div className=" flex justify-between px-3 md:mx-0 md:justify-end md:gap-16 w-full">
-          <div className=" flex items-center gap-[0.15rem]">
-            <FaPhoneAlt className=" text-xl md:text-2xl font-bold text-slate-600" />
-            <p className=" text-sm">
-              Speak with us: <br />{" "}
-              <span className=" md:text-xl text-orange-500 font-semibold">
-                +9779851101782
-              </span>
-            </p>
+      {hideNav && (
+        <div className=" flex flex-col lg:hidden items-start justify-between md:px-5 py-2 mx-auto border-b-[1px] border-b-orange-500 ">
+          <div className=" flex justify-center md:justify-start w-full">
+            <Image src="/logo.png" alt="company logo" width={250} height={20} />
           </div>
-          <button className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm">
-            Book an Appointment
-          </button>
+
+          <div className=" flex justify-between px-3 md:mx-0 md:justify-end md:gap-16 w-full">
+            <div className=" flex items-center gap-[0.15rem]">
+              <FaPhoneAlt className=" text-xl md:text-2xl font-bold text-slate-600" />
+              <p className=" text-sm">
+                Speak with us: <br />{" "}
+                <span className=" md:text-xl text-orange-500 font-semibold">
+                  +9779851101782
+                </span>
+              </p>
+            </div>
+            <button className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm">
+              Book an Appointment
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* menu btn and link section */}
       {/* menu button */}
