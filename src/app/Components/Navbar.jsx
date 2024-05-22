@@ -330,17 +330,17 @@ const Navbar = () => {
       {/* menu btn and link section */}
       {/* menu button */}
       <div
-        className=" lg:hidden flex gap-6 bg-white shadow-sm shadow-slate-400 py-2 px-4"
+        className=" lg:hidden flex justify-end gap-6 bg-white shadow-sm shadow-slate-400 py-2 px-4"
         onClick={() => {
           setDisplayMenu(!displayMenu);
         }}
       >
-        <button className=" text-2xl font-bold mx-2">
-          <CgMenuRight />{" "}
-        </button>
         {hideLogo && (
           <Image src="/logo.png" alt="company logo" width={150} height={20} />
         )}
+        <button className=" text-2xl font-bold mx-2">
+          <CgMenuRight />{" "}
+        </button>
       </div>
       {/* link section  */}
       <div
