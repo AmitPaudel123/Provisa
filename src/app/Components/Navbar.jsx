@@ -218,7 +218,7 @@ const Navbar = () => {
           )}
         </Link>
         <Link
-          href="/abroadstudy"
+          href="/abroadstudy/"
           className=" flex items-center gap-1 pb-4 cursor-pointer"
           onMouseOver={() => {
             setShowAbroadStd(true);
@@ -232,31 +232,31 @@ const Navbar = () => {
           {showAbroadStd && (
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
               <Link
-                href="/"
+                href="/abroadstudy/australia"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Study in Australia
               </Link>
               <Link
-                href="/"
+                href="/abroadstudy/canada"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Study in Canada
               </Link>
               <Link
-                href="/"
+                href="/abroadstudy/uk"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Study in UK
               </Link>
               <Link
-                href="/"
+                href="/abroadstudy/japan"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Study in Japan
               </Link>
               <Link
-                href="/"
+                href="/abroadstudy/usa"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Study in USA
