@@ -370,7 +370,12 @@ const Navbar = () => {
         <div className=" flex justify-start w-full mb-5 ">
           <Image src="/logo.png" alt="company logo" width={250} height={20} />
         </div>
-        <Link href="/" className=" ">
+        <Link
+          href="/"
+          onClick={() => {
+            setDisplayMenu(false);
+          }}
+        >
           Home
         </Link>
         <div>
@@ -386,17 +391,59 @@ const Navbar = () => {
             } overflow-hidden`}
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
-              <Link href="/">Who we are</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Who we are
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Message from M.D</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Message from M.D
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Our Team</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Our Team
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Universities</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Universities
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Testimonial</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Testimonial
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Company Profile</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Company Profile
+              </Link>
             </div>
           </div>
         </div>
@@ -414,15 +461,50 @@ const Navbar = () => {
             } overflow-hidden`}
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
-              <Link href="/">Pre-Departure Briefing</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Pre-Departure Briefing
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Visa Guidance</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Visa Guidance
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Finance & Scholarship</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Finance & Scholarship
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Career Counseling</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Career Counseling
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Interview Preparation and Guidance</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Interview Preparation and Guidance
+              </Link>
             </div>
           </div>
         </div>
@@ -442,15 +524,50 @@ const Navbar = () => {
             } overflow-hidden`}
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
-              <Link href="/">Study in Australia</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Study in Australia
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Study in Canada</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Study in Canada
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Study in UK</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Study in UK
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Study in Japan</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Study in Japan
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Study in USA</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Study in USA
+              </Link>
             </div>
           </div>
         </div>
@@ -470,32 +587,94 @@ const Navbar = () => {
             } overflow-hidden`}
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
-              <Link href="/">IELTS</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                IELTS
+              </Link>
               <hr className="my-2" />
-              <Link href="/">Japanese Language</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                Japanese Language
+              </Link>
               <hr className="my-2" />
-              <Link href="/">PTE</Link>
+              <Link
+                href="/"
+                onClick={() => {
+                  setDisplayMenu(false);
+                }}
+              >
+                PTE
+              </Link>
             </div>
           </div>
         </div>
-        <div className=" flex items-center gap-1  cursor-pointer"> Blogs</div>
-        <Link href="/faq">{"FAQ's"}</Link>
-        <Link href="/contact" className="pb-4 cursor-pointer">
+        <div
+          className=" flex items-center gap-1  cursor-pointer"
+          onClick={() => {
+            setDisplayMenu(false);
+          }}
+        >
+          {" "}
+          Blogs
+        </div>
+        <Link
+          href="/faq"
+          onClick={() => {
+            setDisplayMenu(false);
+          }}
+        >
+          {"FAQ's"}
+        </Link>
+        <Link
+          href="/contact"
+          className="pb-4 cursor-pointer"
+          onClick={() => {
+            setDisplayMenu(false);
+          }}
+        >
           Contact Us
         </Link>
 
         <div className=" flex gap-3">
-          <a className=" p-1 bg-blue-700 text-white">
+          <a
+            className=" p-1 bg-blue-700 text-white"
+            onClick={() => {
+              setDisplayMenu(false);
+            }}
+          >
             <FaFacebookF />{" "}
           </a>
 
-          <a className=" p-1 bg-blue-400 text-white">
+          <a
+            className=" p-1 bg-blue-400 text-white"
+            onClick={() => {
+              setDisplayMenu(false);
+            }}
+          >
             <FaTwitter />{" "}
           </a>
-          <a className=" p-1 bg-blue-500 text-white">
+          <a
+            className=" p-1 bg-blue-500 text-white"
+            onClick={() => {
+              setDisplayMenu(false);
+            }}
+          >
             <FaInstagram />{" "}
           </a>
-          <a className=" p-1 bg-red-700 text-white">
+          <a
+            className=" p-1 bg-red-700 text-white"
+            onClick={() => {
+              setDisplayMenu(false);
+            }}
+          >
             {" "}
             <FaYoutube />
           </a>

@@ -7,7 +7,6 @@ import LatestBlog from "./Components/LatestBlog";
 import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
 import Description from "./Components/Description";
-import Faq from "./Components/Faq";
 
 const page = () => {
   return (

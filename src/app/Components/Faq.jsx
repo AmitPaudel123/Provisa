@@ -135,10 +135,10 @@ const Faq = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-center gap-10 mt-[2rem] py-6 px-6">
-        <div className=" w-[50%]">
+        <div className=" lg:w-[50%]">
           <FaqPage />
         </div>
-        <div className=" flex flex-col gap-3 lg:w-[25%]">
+        <div className=" flex flex-col gap-3  lg:w-[25%]">
           <ContactCard />
           <Form />
         </div>
