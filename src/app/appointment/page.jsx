@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import Image from "next/image";
 import Location from "../Components/Location";
 import TextSlider from "../Components/TextSlider";
+import ImageCard from "../Components/ImageCard";
 
 const Form = () => {
   const backgroundImageUrl = `/contactbanner.webp`;
@@ -21,20 +22,10 @@ const Form = () => {
 
   return (
     <>
-      <div className="relative bg-gradient-to-tr from-slate-600 to-black h-[23rem] ">
-        <Image
-          src="/appointmentimg.webp"
-          alt="slider"
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-          className="  object-cover absolute mix-blend-overlay"
-        />
-        <div className=" pl-[12rem] pt-[18rem] text-white font-bold text-4xl">
-          {"Books For Counseling"}
-        </div>
-      </div>
-
+      <ImageCard
+        imgsrc={`/appointmentimg.webp`}
+        topic={`Books for Counseling`}
+      />
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-5xl mx-auto p-8 bg-gray-100 shadow-md rounded-lg mt-[2rem] mb-3 z-20"

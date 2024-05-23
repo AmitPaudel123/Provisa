@@ -6,24 +6,16 @@ import Location from "../Components/Location";
 import { RiMailOpenFill } from "react-icons/ri";
 import { MdLocationPin } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import ImageCard from "../Components/ImageCard";
 const Page = () => {
   const backgroundImageUrl = `/contactbanner.webp`;
 
   return (
-    <div className="mt-[12rem] ">
-      <div className="relative bg-gradient-to-tr from-slate-600 to-black h-[19rem]">
-        <Image
-          src="/contactbanner.webp"
-          alt="slider"
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-          className="object-cover absolute mix-blend-overlay"
-        />
-        <div className=" pl-5 lg:pl-[12rem] pt-[13rem] text-white font-bold text-4xl">
-          {"Books For Counseling"}
-        </div>
-      </div>
+    <div className="mt-[6rem] ">
+      <ImageCard
+        imgsrc={"/contactbanner.webp"}
+        topic={"Books For Counseling"}
+      />
       <div className="lg:mx-auto mx-2 py-3 w-full lg:w-[50%]">
         <Form />
       </div>

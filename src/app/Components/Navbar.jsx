@@ -117,7 +117,8 @@ const Navbar = () => {
         <Link href="/" className="pb-4 cursor-pointer">
           Home
         </Link>
-        <div
+        <Link
+          href="/about"
           div
           className=" flex items-center gap-1 relative pb-4 cursor-pointer"
           onMouseOver={() => {
@@ -131,31 +132,31 @@ const Navbar = () => {
           {showAbout && (
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
               <Link
-                href="/"
+                href="/about"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Who we are
               </Link>
               <Link
-                href="/"
+                href="/about/message"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Message from M.D
               </Link>
               <Link
-                href="/"
+                href="/about/team"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Our Team
               </Link>
               <Link
-                href="/"
+                href="/about/universities"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Universities
               </Link>
               <Link
-                href="/"
+                href="/about/testimonial"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Testimonial
@@ -168,8 +169,9 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-        </div>
-        <div
+        </Link>
+        <Link
+          href={"/services"}
           className=" flex items-center gap-1 pb-4 cursor-pointer"
           onMouseOver={() => {
             setShowServices(true);
@@ -183,39 +185,40 @@ const Navbar = () => {
           {showServices && (
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
               <Link
-                href="/"
+                href="/services/briefing"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Pre-Depature Briefing{" "}
               </Link>
               <Link
-                href="/"
+                href="/services/visa"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Visa Guidance{" "}
               </Link>
               <Link
-                href="/"
+                href="/services/finance"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Finance & Scholarship{" "}
               </Link>
               <Link
-                href="/"
+                href="/services/counseling"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Carrer Counseling{" "}
               </Link>
               <Link
-                href="/"
+                href="/services/interview"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Interview preparance and Guidance{" "}
               </Link>
             </div>
           )}
-        </div>
-        <div
+        </Link>
+        <Link
+          href="/abroadstudy"
           className=" flex items-center gap-1 pb-4 cursor-pointer"
           onMouseOver={() => {
             setShowAbroadStd(true);
@@ -260,7 +263,7 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-        </div>
+        </Link>
         <div
           className=" flex items-center gap-1 pb-4 cursor-pointer"
           onMouseOver={() => {

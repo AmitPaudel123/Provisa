@@ -2,8 +2,8 @@
 import { useRef, useState } from "react";
 import React from "react";
 import Form from "./Form";
-import Link from "next/link";
-import Image from "next/image";
+import ImageCard from "./ImageCard";
+import ContactCard from "../about/ContactCard";
 const FaqsCard = ({ faqsList, idx }) => {
   const answerElRef = useRef();
   const [state, setState] = useState(false);
@@ -103,37 +103,11 @@ const FaqPage = () => {
   );
 };
 
-const ContactCard = () => {
-  return (
-    <div className=" bg-slate-100 p-4 rounded-md">
-      <h1 className=" font-semibold text-2xl mb-3">About Us</h1>
-      <div className=" flex flex-col gap-2">
-        <Link href="/">About Us</Link>
-        <Link href="/">Message From M.D</Link>
-        <Link href="/">Our Team</Link>
-        <Link href="/">Universities</Link>
-        <Link href="/">Testimonials</Link>
-      </div>
-    </div>
-  );
-};
-
 const Faq = () => {
   return (
     <>
-      <div className="relative bg-gradient-to-tr from-slate-600 to-black h-[23rem] ">
-        <Image
-          src="/faqimg.webp"
-          alt="slider"
-          layout="fill"
-          objectFit="cover"
-          priority={true}
-          className="  object-cover absolute mix-blend-overlay"
-        />
-        <div className=" pl-[12rem] pt-[18rem] text-white font-bold text-4xl">
-          {"FAQ'S"}
-        </div>
-      </div>
+      <ImageCard imgsrc={"/faqimg.webp"} topic={`FAQ'S`} />
+
       <div className="flex flex-col lg:flex-row justify-center gap-10 mt-[2rem] py-6 px-6">
         <div className=" lg:w-[50%]">
           <FaqPage />

@@ -2,7 +2,7 @@ import React from "react";
 import HomeSlider from "./Components/HomeSlider";
 import AssistCard from "./Components/AssistCard";
 import Testimonial from "./Components/Testimonial";
-import Universities from "./Universities";
+import Universities from "./Components/Universities";
 import LatestBlog from "./Components/LatestBlog";
 import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
@@ -18,7 +18,9 @@ const page = () => {
       <Testimonial />
       <FormSection />
       <LatestBlog />
-      <Universities />
+      <div className=" my-[2rem]">
+        <Universities />
+      </div>{" "}
     </div>
   );
 };
