@@ -20,7 +20,6 @@ const page = () => {
       <FormSection />
       <LatestBlog />
       <Universities />
-      <Faq />
     </div>
   );
 };
