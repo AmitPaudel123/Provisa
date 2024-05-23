@@ -395,7 +395,7 @@ const Navbar = () => {
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
               <Link
-                href="/"
+                href="/about"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -404,7 +404,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/about/message"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -413,7 +413,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/about/team"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -422,7 +422,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/about/universities"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -431,7 +431,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/about/testimonial"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -452,12 +452,13 @@ const Navbar = () => {
         </div>
 
         <div>
-          <div
+          <Link
+            href="/"
             className="flex gap-2 items-center cursor-pointer"
             onClick={() => setDisplayServices(!displayServices)}
           >
             <span>Our services</span> <IoIosArrowDown />
-          </div>
+          </Link>
           <div
             className={`transition-all duration-300 ${
               displayServices ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
@@ -465,7 +466,7 @@ const Navbar = () => {
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
               <Link
-                href="/"
+                href="/services/briefing"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -474,7 +475,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/services/visa"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -483,7 +484,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/services/finance"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -492,7 +493,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/services/counseling"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -501,7 +502,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/services/counseling"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -513,10 +514,7 @@ const Navbar = () => {
         </div>
 
         <div>
-          <div
-            className="flex gap-2 items-center cursor-pointer"
-            onClick={() => setdisplayAbroadStd(!displayAbroadStd)}
-          >
+          <div className="flex gap-2 items-center cursor-pointer">
             <span>Abroad Study</span> <IoIosArrowDown />
           </div>
           <div
