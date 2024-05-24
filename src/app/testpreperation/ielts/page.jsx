@@ -68,7 +68,7 @@ const Page = () => {
                 and Canada.
               </p>
               <h1 className=" text-xl font-bold my-3">TYPES OF IELTS TEST</h1>
-              <ol className="  list-decimal">
+              <ol className="  list-decimal list-inside">
                 <li>
                   Academic IELTS
                   <p>
