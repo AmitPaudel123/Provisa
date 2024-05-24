@@ -46,50 +46,56 @@ const HomeSlider = () => {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       <Slider {...settings}>
-        <div className="relative bg-gradient-to-tr from-blue-400 to-red-300 h-screen w-screen bg-cover ">
+        <div className="relative h-screen w-screen bg-cover ">
           <Image
             src="/sliderimg1.webp"
             alt="slider"
             layout="fill"
             objectFit="cover"
             priority={true}
-            className="  object-cover absolute mix-blend-overlay"
+            className="  object-cover absolute"
           />
-          <div className=" px-[32rem] py-[24rem]">
-            <p className=" text-white px-4 py-3 text-3xl font-semibold  text-center bg-black border-white border-[2px]">
-              Welcome to Professional Visa <br /> & Education Service
-            </p>
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+            <div className=" lg:px-[32rem] py-[24rem]">
+              <p className=" text-white px-4 py-3 md:text-xl lg:text-3xl font-semibold text-center bg-black bg-opacity-70 border-white border-[2px]">
+                Welcome to Professional Visa <br /> & Education Service
+              </p>
+            </div>
           </div>
         </div>
-        <div className="relative bg-gradient-to-tr from-blue-500 to-red-500 h-screen w-screen bg-cover ">
+        <div className="relative h-screen w-screen bg-cover ">
           <Image
             src="/sliderimg2.webp"
             alt="slider"
             layout="fill"
             objectFit="cover"
             priority={true}
-            className="  object-cover absolute mix-blend-overlay"
+            className="  object-cover absolute"
           />
-          <div className=" px-[32rem] py-[24rem]">
-            <p className=" text-white text-2xl text-center py-5 px-4 font-semibold  bg-black border-white border-[2px]">
-              GRAB 50% OFF ON IELTS & PTE{" "}
-            </p>
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+            <div className=" lg:px-[32rem] py-[24rem]">
+              <p className=" text-white md:text-xl lg:text-2xl text-center py-5 px-4 font-semibold bg-black bg-opacity-70 border-white border-[2px]">
+                GRAB 50% OFF ON IELTS & PTE{" "}
+              </p>
+            </div>
           </div>
         </div>
-        <div className="relative bg-gradient-to-tr from-blue-400 to-red-500 h-screen w-screen bg-cover ">
+        <div className="relative h-screen w-screen bg-cover ">
           <Image
             src="/sliderimg3.jpg"
             alt="slider"
             layout="fill"
             objectFit="cover"
             priority={true}
-            className="  object-cover absolute mix-blend-overlay"
+            className="  object-cover absolute"
           />
-          <div className=" px-[32rem] py-[24rem] ">
-            <p className=" text-white text-center hover:animate-bounce bg-black px-1 border-white border-[2px] w-fit py-3 text-2xl font-semibold ">
-              WE CAN HELP YOU LIVE THE <br /> LIFE YOU HAVE BEEN DREAMING OF We
-              can help you live the life you have been dreaming of
-            </p>
+          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+            <div className=" px-[15px] lg:px-[32rem] py-[24rem] ">
+              <p className=" text-white text-center hover:animate-bounce bg-black bg-opacity-70 px-1 border-white border-[2px] w-fit py-3 text-2xl font-semibold ">
+                WE CAN HELP YOU LIVE THE <br /> LIFE YOU HAVE BEEN DREAMING OF
+                We can help you live the life you have been dreaming of
+              </p>
+            </div>
           </div>
         </div>
       </Slider>

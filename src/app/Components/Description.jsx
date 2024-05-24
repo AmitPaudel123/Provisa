@@ -8,12 +8,12 @@ import { SiBookstack } from "react-icons/si";
 
 const Description = () => {
   return (
-    <div className=" my-5">
-      <div className=" bg-white text-slate-600 text-center px-2 lg:px-[9rem] my-16">
-        <h1 className=" text-[#8b37d8] font-semibold text-2xl mb-2">
+    <div className="my-5">
+      <div className="bg-white text-slate-600 text-center px-2 lg:px-[9rem] my-16">
+        <h1 className="text-[#8b37d8] font-semibold text-2xl mb-2">
           PROFESSIONAL VISA AND EDUCATION SERVICES
         </h1>
-        <p className=" h-fit">
+        <p className="h-fit">
           {` Professional Visa and Education Services Pvt. Ltd. (Pro-Visa) is a
           professional visa and educational consultancy authorized by the
           Ministry of Education (MOE) and offering free education to students
@@ -28,7 +28,7 @@ const Description = () => {
         </p>
       </div>
 
-      <div className=" flex flex-col  items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <div className="relative w-full h-[35rem] lg:h-96">
           {/* Background Image */}
           <Image
@@ -40,50 +40,42 @@ const Description = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0  bg-gradient-to-tr from-blue-500 to-red-500 opacity-60 z-10"></div>
+          <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
 
           {/* Foreground Content */}
           <div className="relative z-20 flex flex-col md:flex-row items-center justify-between h-full text-white gap-2 lg:px-[18rem]">
             <div className="flex flex-col items-center">
               <div className="text-6xl">
-                <div>
-                  <FaUniversity />{" "}
-                </div>
+                <FaUniversity />
               </div>
-              <div className=" text-xl font-bold text-center">
+              <div className="text-xl font-bold text-center">
                 <p>200+</p>
                 <p>College & Universities</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-6xl">
-                <div>
-                  <BsGlobeAsiaAustralia />{" "}
-                </div>{" "}
+                <BsGlobeAsiaAustralia />
               </div>
-              <div className=" text-xl font-bold text-center">
+              <div className="text-xl font-bold text-center">
                 <p>5+</p>
                 <p>Countries</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-6xl">
-                <div>
-                  <PiStudentBold />{" "}
-                </div>{" "}
+                <PiStudentBold />
               </div>
-              <div className=" text-xl font-bold text-center">
-                <p>1500+</p>
-                <p> Happy Students</p>
+              <div className="text-xl font-bold text-center">
+                <p>1500+/</p>
+                <p>Happy Students</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-6xl">
-                <div>
-                  <SiBookstack />{" "}
-                </div>{" "}
+                <SiBookstack />
               </div>
-              <div className=" text-xl font-bold text-center">
+              <div className="text-xl font-bold text-center">
                 <p>150+</p>
                 <p>Courses</p>
               </div>

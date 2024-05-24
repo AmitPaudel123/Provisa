@@ -11,22 +11,16 @@ const page = () => {
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[20%]">
           <ContactCard />
         </div>
-        <div className="shadow-sm shadow-slate-400 w-fit">
-          <div className="relative w-64 group">
-            <div className="relative w-fit h-64 overflow-hidden">
-              <Image
-                width={300}
-                height={100}
-                src="/mdimg.jpg"
-                alt="Descriptive Alt Text"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 w-full flex items-center justify-center">
-                <div className=" text-black group-hover:bg-gray-800S py-2 px-4 transition-transform duration-300 ease-in-out transform translate-y-[1rem] z-[999] fixed group-hover:translate-y-[-1rem]">
-                  Image Name
-                </div>
-              </div>
-            </div>
+        <div className="relative w-72 h-72 group">
+          <Image
+            src="/mdimg.jpg"
+            alt="Person Image"
+            width={500}
+            height={100}
+            className=" object-cover"
+          />
+          <div className=" font-bold bg-none group-hover:transform group-hover:translate-y-[-3rem] transition ease-in-out text-center group-hover:bg-blue-500 text-slate-600 group-hover:text-white">
+            <p>Bashu Nepal</p> <p>MD</p>
           </div>
         </div>
       </div>

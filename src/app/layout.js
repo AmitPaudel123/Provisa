@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import GoTop from "./Components/GoTop";
+import FloatingActionButton from "./Components/FloatingActionButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={` bg-white ${inter.className}`}>
+        <FloatingActionButton />
         <GoTop />
         <Navbar />
         {children}

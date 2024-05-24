@@ -1,12 +1,12 @@
 import React from "react";
 import HomeSlider from "./Components/HomeSlider";
 import AssistCard from "./Components/AssistCard";
-import Testimonial from "./Components/Testimonial";
 import Universities from "./Components/Universities";
 import LatestBlog from "./Components/LatestBlog";
 import StudyAbroad from "./Components/StudyAbroad";
 import FormSection from "./Components/FormSection";
 import Description from "./Components/Description";
+import Testimonials from "./Components/Testi";
 
 const page = () => {
   return (
@@ -15,7 +15,8 @@ const page = () => {
       <Description />
       <AssistCard />
       <StudyAbroad />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <Testimonials />
       <FormSection />
       <LatestBlog />
       <div className=" my-[2rem]">

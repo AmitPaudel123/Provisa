@@ -37,7 +37,7 @@ const integrations = [
     title: "POST ADMISSION SERVICES",
     desc: "We can manage airport pickup service for the students with the help of our resources out in different countries. We...",
     logo: "/assistimg6.webp",
-    link: "/services/briefing",
+    link: "/services/postadmission",
   },
 ];
 

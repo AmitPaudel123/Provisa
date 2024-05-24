@@ -64,3 +64,9 @@ body {
   overflow: hidden;
   padding: 0 10px;
 }
+
+@media screen and (min-width: 1024px) {
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+}

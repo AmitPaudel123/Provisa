@@ -454,7 +454,7 @@ const Navbar = () => {
 
         <div>
           <Link
-            href="/"
+            href=""
             className="flex gap-2 items-center cursor-pointer"
             onClick={() => setDisplayServices(!displayServices)}
           >

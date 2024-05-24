@@ -30,7 +30,7 @@ const AbroadCard = ({
             />
           </div>
           <div
-            className=" h-screen overflow-scroll mt-3"
+            className=" lg:backdrop:h-screen lg:overflow-scroll mt-3"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",

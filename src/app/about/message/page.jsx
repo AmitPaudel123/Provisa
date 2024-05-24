@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <ImageCard imgsrc={"/aboutimg.webp"} topic={"Message From M.D"} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-8 my-[4rem]">
+      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-8 gap-2 my-[4rem] clear-start text-slate-700">
         <div className="w-[90%] mx-auto lg:mx-0 lg:w-[20%]">
           <ContactCard />
         </div>
@@ -15,15 +15,16 @@ const page = () => {
             <p className=" text-[#8b37d8] font-bold text-2xl">Who We Are </p>
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
           </div>
-          <div className=" my-2 flex flex-col lg:flex-row gap-2">
+          <div className=" my-2 flex flex-col lg:flex-row gap-2 ">
             <div>
               <Image
                 src="/mdimg.jpg"
                 alt="about_img"
                 height={100}
                 width={250}
+                className=" shadow-sm shadow-slate-200"
               />
-              <p>M.D Bashu Nepal</p>
+              <p className=" text-xl font-semibold">M.D Bashu Nepal</p>
             </div>
             <p className=" lg:w-[70%]">
               <span className=" text-lg font-semibold">PROVISA</span> is

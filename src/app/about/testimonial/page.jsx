@@ -1,8 +1,7 @@
 import ImageCard from "@/app/Components/ImageCard";
 import React from "react";
 import ContactCard from "../ContactCard";
-import Testimonial from "@/app/Components/Testimonial";
-
+import Testimonials from "@/app/Components/Testi";
 const page = () => {
   return (
     <div>
@@ -12,7 +11,7 @@ const page = () => {
           <ContactCard />
         </div>
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[70%]">
-          <Testimonial />
+          <Testimonials />
         </div>
       </div>
     </div>

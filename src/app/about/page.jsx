@@ -4,15 +4,15 @@ import ContactCard from "./ContactCard";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className="">
+    <div className=" text-slate-600">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={`About Us`} />
       <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-8 my-[4rem]">
         <div className=" w-[90%] mx-auto lg:mx-0 md:w-[20%]">
           <ContactCard />
         </div>
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[45%]">
-          <div className=" flex flex-col">
-            <p className=" text-[#8b37d8] font-bold text-2xl">Who We Are </p>
+          <div className=" flex flex-col mb-2">
+            <p className=" text-[#8b37d8] font-bold text-2xl ">Who We Are </p>
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
           </div>
           <p>
@@ -43,10 +43,11 @@ const page = () => {
             alt="about_img"
             height={100}
             width={500}
+            className=" mt-2"
           />
           <div>
             <br />
-            <h1 className=" text-[#8b37d8] font-bold text-2xl">Our Mission</h1>
+            <h1 className=" font-bold text-2xl">Our Mission</h1>
             <p>
               Our mission is to make students choose the best education
               destination for them to help them become professional experts in
@@ -65,7 +66,7 @@ const page = () => {
           </div>
           <div>
             <br />
-            <h1 className=" text-[#8b37d8] font-bold text-2xl">Our Vision</h1>
+            <h1 className=" font-bold text-2xl">Our Vision</h1>
             <p>
               Our vision is to connect Nepal to the world by searching best
               universities and colleges for Nepalese students. Further as your
