@@ -7,26 +7,31 @@ const integrations = [
     title: "PRE-DEPARTURE BRIEIFING",
     desc: "WE provide pre-departure orientation, which includes information on flight reservations, airport pick-ups, loading, insurance, and medical provisions. The students are ....",
     logo: "/assistimg1.webp",
+    link: "/services/briefing",
   },
   {
     title: "VISA GUIDANCE",
     desc: "Many Students experience bitterness as a result of visa failure as as result of inadequate document and preparations. Our advisors...",
     logo: "/assistimg2.webp",
+    link: "/services/visa",
   },
   {
     title: "FINANCE & SCHOLARSHIP",
     desc: "we can help you prepare all of the financial documents you'll need for your chosen destination. We assist you...",
     logo: "/assistimg3.webp",
+    link: "/services/finance",
   },
   {
     title: "CARRER COUNSELING",
     desc: "Our advisors have conduced extensive research to assist you in determining whether the United States of America, Australia, Canada, or...",
     logo: "/assistimg4.webp",
+    link: "/services/counseling",
   },
   {
     title: "INTERVIEW PREPARATION AND GUIDANCE",
     desc: "We focus on preparing students properly for the interview with proper docuementation;financial as well as academic documentation. Perfect practice...",
     logo: "/assistimg5.webp",
+    link: "/services/interview",
   },
   {
     title: "POST ADMISSION SERVICES",
@@ -73,10 +78,10 @@ const AssistCard = () => {
                 </div>
                 <div className="py-5 px-4 border-t text-right">
                   <Link
-                    href="javascript:void(0)"
+                    href={integrations.link}
                     className="text-indigo-600 hover:text-indigo-500 text-sm font-medium"
                   >
-                    View more
+                    Learn more
                   </Link>
                 </div>
               </Link>

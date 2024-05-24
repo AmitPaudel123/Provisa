@@ -2,58 +2,34 @@ import React from "react";
 import Image from "next/image";
 import ImageCard from "../Components/ImageCard";
 import Link from "next/link";
-
-const images = [
-  {
-    src: "/study1.webp",
-    title: "Study in Australia",
-    description:
-      "Australia has one of the best institutions and universities...",
-    button: "Learn More",
-    link: "/abroadstudy/australia",
-  },
-  {
-    src: "/studycanada.webp",
-    title: "Study in Canada",
-    description:
-      "Education system in Canada It's common knowledge that studying...",
-    button: "Learn More",
-    link: "/abroadstudy/canada",
-  },
-  {
-    src: "/study3.webp",
-    title: "Study in the USA",
-    description: "Education System in USA There are two major intakes...",
-    button: "Learn More",
-    link: "/abroadstudy/usa",
-  },
-  {
-    src: "/study2.webp",
-    title: "Study in UK",
-    description: "Education system in UK students in the United Kingdom...",
-    button: "Learn More",
-    link: "/abroadstudy/uk",
-  },
-  {
-    src: "/study4.webp",
-    title: "Study in Japan",
-    description: "Education system in Japan In the decades following world...",
-    button: "Learn More",
-    link: "/abroadstudy/japan",
-  },
-  {
-    src: "/study2.webp",
-    title: "Study in Europe",
-    description: "In terms of research and education, Europe is a...",
-    button: "Learn More",
-    link: "/abroadstudy/australia",
-  },
-];
-
-const ImageGrid = () => {
+const page = () => {
+  const images = [
+    {
+      src: "/study4.webp",
+      title: "Japenese Language",
+      description: "NAT Nihongo Ability Test is teh full form of...",
+      button: "Learn More",
+      link: "/testpreperation/japaneselan",
+    },
+    {
+      src: "/pte.webp",
+      title: "PTE",
+      description:
+        "Pearson English Tests (PTE) Academic English is a language...",
+      button: "Learn More",
+      link: "/testpreperation/pte",
+    },
+    {
+      src: "/study3.webp",
+      title: "IELTS",
+      description: "The International English Language Testing System is a...",
+      button: "Learn More",
+      link: "/testpreperation/ielts",
+    },
+  ];
   return (
     <>
-      <ImageCard topic={"Abroad Study"} imgsrc={"/abroadstudy.webp"} />
+      <ImageCard topic={"Test Preperation"} imgsrc={"/tpreperation.webp"} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-[4rem] mb-6 mx-10">
         {images.map((image, index) => (
           <div
@@ -91,4 +67,4 @@ const ImageGrid = () => {
   );
 };
 
-export default ImageGrid;
+export default page;

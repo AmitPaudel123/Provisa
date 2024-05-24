@@ -264,7 +264,8 @@ const Navbar = () => {
             </div>
           )}
         </Link>
-        <div
+        <Link
+          href="/testpreperation"
           className=" flex items-center gap-1 pb-4 cursor-pointer"
           onMouseOver={() => {
             setShowPreparation(true);
@@ -279,26 +280,26 @@ const Navbar = () => {
           {showPreparation && (
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
               <Link
-                href="/"
+                href="/testpreperation/ielts"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 IELTS{" "}
               </Link>
               <Link
-                href="/"
+                href="/testpreperation/japaneselan"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 JAPENESE LANGUAGE{" "}
               </Link>
               <Link
-                href="/"
+                href="/testpreperation/pte"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 PTE{" "}
               </Link>
             </div>
           )}
-        </div>
+        </Link>
         <div className=" flex items-center gap-1 pb-4 cursor-pointer">
           {" "}
           Blogs
@@ -502,7 +503,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/services/counseling"
+                href="/services/interview"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -514,7 +515,10 @@ const Navbar = () => {
         </div>
 
         <div>
-          <div className="flex gap-2 items-center cursor-pointer">
+          <div
+            className="flex gap-2 items-center cursor-pointer"
+            onClick={() => setdisplayAbroadStd(!displayAbroadStd)}
+          >
             <span>Abroad Study</span> <IoIosArrowDown />
           </div>
           <div
@@ -526,7 +530,7 @@ const Navbar = () => {
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
               <Link
-                href="/"
+                href="/abroadstudy/australia"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -535,7 +539,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/abroadstudy/canada"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -544,7 +548,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/abroadstudy/uk"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -553,7 +557,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/abroadstudy/japan"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -562,7 +566,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/abroadstudy/usa"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -589,7 +593,7 @@ const Navbar = () => {
           >
             <div className="mt-2 bg-white shadow-lg rounded-lg p-4 text-slate-600">
               <Link
-                href="/"
+                href="/testpreperation/ielts"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -598,7 +602,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/testpreperation/japaneselan"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}
@@ -607,7 +611,7 @@ const Navbar = () => {
               </Link>
               <hr className="my-2" />
               <Link
-                href="/"
+                href="/testpreperation/pte"
                 onClick={() => {
                   setDisplayMenu(false);
                 }}

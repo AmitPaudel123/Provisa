@@ -31,3 +31,36 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Ensure the container uses the full viewport height minus some space for padding */
+.scroll-container {
+  display: flex;
+  height: calc(
+    100vh - 100px
+  ); /* Adjust this height to leave space for the footer */
+  overflow: hidden; /* Remove scrollbars from the container */
+}
+
+/* Make the left column scrollable */
+.scroll-column {
+  overflow-y: auto;
+  flex: 1;
+  padding: 0 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scroll-column::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Make the right column sticky and ensure it fits within the viewport height */
+.sticky-column {
+  position: sticky;
+  top: 0;
+  height: calc(
+    100vh - 100px
+  ); /* Adjust this height to leave space for the footer */
+  overflow: hidden;
+  padding: 0 10px;
+}
