@@ -37,6 +37,7 @@ const integrations = [
     title: "POST ADMISSION SERVICES",
     desc: "We can manage airport pickup service for the students with the help of our resources out in different countries. We...",
     logo: "/assistimg6.webp",
+    link: "/services/briefing",
   },
 ];
 
@@ -78,7 +79,7 @@ const AssistCard = () => {
                 </div>
                 <div className="py-5 px-4 border-t text-right">
                   <Link
-                    href={integrations.link}
+                    href={item.link}
                     className="text-indigo-600 hover:text-indigo-500 text-sm font-medium"
                   >
                     Learn more
