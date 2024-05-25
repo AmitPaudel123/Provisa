@@ -5,11 +5,21 @@ const ContactCard = () => {
     <div className=" bg-slate-100 p-4 rounded-md">
       <h1 className=" font-semibold text-2xl mb-3">About Us</h1>
       <div className=" flex flex-col gap-2">
-        <Link href="/about">About Us</Link>
-        <Link href="/about/message">Message From M.D</Link>
-        <Link href="/about/team">Our Team</Link>
-        <Link href="/about/universities">Universities</Link>
-        <Link href="/about/testimonial">Testimonials</Link>
+        <Link href="/about" className=" text-effect">
+          About Us
+        </Link>
+        <Link href="/about/message" className=" text-effect">
+          Message From M.D
+        </Link>
+        <Link href="/about/team" className=" text-effect">
+          Our Team
+        </Link>
+        <Link href="/about/universities" className=" text-effect">
+          Universities
+        </Link>
+        <Link href="/about/testimonial" className=" text-effect">
+          Testimonials
+        </Link>
       </div>
     </div>
   );

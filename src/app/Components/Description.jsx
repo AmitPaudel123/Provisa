@@ -8,12 +8,12 @@ import { SiBookstack } from "react-icons/si";
 
 const Description = () => {
   return (
-    <div className="my-5">
-      <div className="bg-white text-slate-600 text-center px-2 lg:px-[9rem] my-16">
-        <h1 className="text-[#8b37d8] font-semibold text-2xl mb-2">
+    <div className="">
+      <div className="bg-white  text-center px-2 lg:px-[11rem] my-16">
+        <h1 className="text-[#8b37d8]  font-semibold text-2xl mb-2">
           PROFESSIONAL VISA AND EDUCATION SERVICES
         </h1>
-        <p className="h-fit">
+        <p className="h-fit text-slate-600 opacity-70">
           {` Professional Visa and Education Services Pvt. Ltd. (Pro-Visa) is a
           professional visa and educational consultancy authorized by the
           Ministry of Education (MOE) and offering free education to students

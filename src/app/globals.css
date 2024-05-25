@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .top-nav {
+    @apply text-sm;
+  }
+  .icon-hover:hover {
+    @apply scale-125;
+  }
+  .text {
+    @apply text-slate-500;
+  }
+  .gapping {
+    @apply my-[6rem] lg:w-[80%] mx-auto;
+  }
+  .text-effect:hover {
+    @apply translate-x-2 transition-transform duration-300 ease-in-out;
+  }
+  .text-underline:hover {
+    @apply underline;
+  }
+  .footer-txt {
+    @apply text-slate-500 opacity-90;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

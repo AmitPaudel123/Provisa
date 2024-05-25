@@ -38,7 +38,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth focus:scroll-auto">
+    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="IELTS" />
         <div className="flex flex-col lg:flex-row justify-center gap-6 my-4 lg:h-[50rem]">
@@ -52,7 +52,7 @@ const Page = () => {
             ref={leftRef}
           >
             <Image src="/ielts.webp" alt="IELTS" width={700} height={100} />
-            <div className=" text-slate-700">
+            <div className=" text-slate-500">
               <h1 className=" text-3xl font-bold my-3">Course Description</h1>
               <p>
                 The International English Language Testing System (IELTS) is a

@@ -14,7 +14,7 @@ const Appointmentform = () => {
     alert("Form submitted successfully!");
   };
   return (
-    <div>
+    <div className=" text">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-5xl mx-auto p-8 bg-gray-100 shadow-md rounded-lg mt-[2rem] mb-3 z-20"

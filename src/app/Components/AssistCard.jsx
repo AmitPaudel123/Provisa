@@ -43,7 +43,7 @@ const integrations = [
 
 const AssistCard = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="gapping bg-white">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className=" flex flex-col items-center">
           <p className=" text-[#8b37d8] font-bold text-2xl">
@@ -71,10 +71,12 @@ const AssistCard = () => {
                       />
                     </div>
 
-                    <h4 className="text-[#cf2e2e] font-semibold">
+                    <h4 className="text-[#cf2e2e] opacity-70 font-semibold">
                       {item.title}
                     </h4>
-                    <p className=" text-sm">{item.desc}</p>
+                    <p className=" text-sm text-slate-600 opacity-80">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
                 <div className="py-5 px-4 border-t text-right">

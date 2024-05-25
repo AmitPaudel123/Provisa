@@ -54,22 +54,19 @@ const Navbar = () => {
       {/* Navbar for larger device----------------------------------------------------------- */}
       {/* top navbar */}
       {hideNav && (
-        <div className="bg-[#cf2e2e] text-white py-3 hidden lg:flex justify-evenly lg:px-2 xl:px-8 items-center text-xs">
+        <div className="bg-[#cf2e2e] text-white py-3 hidden lg:flex justify-evenly lg:px-2 xl:px-8 items-center top-nav">
           <div className="flex items-center space-x-4">
-            <a href="https://facebook.com" target="_blank" className="text-lg">
-              <FaFacebookF className=" hover:bg-white hover:text-orange-500" />
+            <a href="https://facebook.com" target="_blank">
+              <FaFacebookF className=" size-4 icon-hover" />
             </a>
-            <span className="h-4 w-px bg-slate-600"></span>
             <a href="https://instagram.com" target="_blank" className="text-lg">
-              <FaInstagram className=" hover:bg-white hover:text-orange-500" />
+              <FaInstagram className=" icon-hover" />
             </a>
-            <span className="h-4 w-px bg-slate-600"></span>
             <a href="https://twitter.com" target="_blank" className="text-lg">
-              <FaTwitter className=" hover:bg-white hover:text-orange-500" />
+              <FaTwitter className=" icon-hover" />
             </a>
-            <span className="h-4 w-px bg-slate-600"></span>
             <a href="https://youtube.com" target="_blank" className="text-lg">
-              <FaYoutube className=" hover:bg-white hover:text-orange-500" />
+              <FaYoutube className=" icon-hover" />
             </a>
           </div>
 
@@ -82,7 +79,7 @@ const Navbar = () => {
             <RiMailOpenFill /> admin@provisa.com.np
           </div>
           <div className=" flex items-center gap-[0.15rem]">
-            <MdLocationPin />
+            <MdLocationPin className=" size-4" />
             Laxmi Plaza, Putalisadak, Padmodaya Mode, Kathmandu,Nepal
           </div>
         </div>
@@ -90,14 +87,14 @@ const Navbar = () => {
 
       {/* logo section */}
       {hideNav && (
-        <div className=" hidden lg:flex items-center justify-between px-5 xl:px-0 lg:w-[90%] xl:w-[75%]  mx-auto border-b-[1px] border-b-orange-500">
-          <Image src="/logo.png" alt="company logo" width={250} height={20} />
+        <div className=" hidden lg:flex items-center justify-between px-5 xl:px-0 lg:w-[90%] xl:w-[80%]  mx-auto border-b-[1px] border-b-orange-500">
+          <Image src="/logo.png" alt="company logo" width={300} height={20} />
           <div className=" flex items-center gap-10">
             <div className=" flex items-center gap-[0.15rem]">
               <FaPhoneAlt className=" text-2xl font-bold text-slate-600" />
               <p className=" text-sm">
                 Speak with us: <br />{" "}
-                <span className=" text-xl text-orange-500 font-semibold">
+                <span className=" text-lg text-orange-500 font-semibold">
                   +9779851101782
                 </span>
               </p>
@@ -113,7 +110,7 @@ const Navbar = () => {
       )}
 
       {/* link section */}
-      <div className="lg:w-[80%] xl:w-[70%] mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 z-10 py-1">
+      <div className="lg:w-[80%]  mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 z-10 py-1">
         <Link href="/" className="pb-4 cursor-pointer">
           Home
         </Link>

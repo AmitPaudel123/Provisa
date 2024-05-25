@@ -54,7 +54,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-16 px-4">
+    <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-16 px-4 gapping">
       <h2 className="text-center text-white text-3xl font-semibold mb-8">
         {`Student's Testimonial`}{" "}
       </h2>
@@ -70,7 +70,7 @@ const Testimonials = () => {
                 className="w-[5rem] h-[5rem] rounded-full"
               />
             </div>
-            <p className="text-lg text-gray-800 mb-2">
+            <p className=" text-gray-600 mb-2">
               PROVISA provided me great assistance on my student visa approval.
               I really appreciate your efforts, consultation and customer
               services. Thank you PROVISA for guiding me throug the right path
@@ -78,7 +78,7 @@ const Testimonials = () => {
               be forever grateful for your help and great assistance.
             </p>
             <p className="text-gray-600 font-bold">- David Herioc</p>
-            <p className=" text-gray-600">The University of Australia</p>
+            <p className=" text-gray-600 ">The University of Australia</p>
           </div>
           <div className="p-4 bg-white rounded-lg shadow-lg text-center">
             <div className="relative w-24 h-24 mx-auto mb-4">
@@ -90,7 +90,7 @@ const Testimonials = () => {
                 className=" w-[5rem] h-[5rem] rounded-full"
               />
             </div>
-            <p className="text-lg text-gray-800 mb-2">
+            <p className="  text-gray-600 mb-2">
               I feel very lucky to be part of PROVISA. I got perfect counselling
               during my test preparation, documentation preparation, visa
               application and SOP writing writing which helped me in visa

@@ -5,7 +5,7 @@ const Universities = () => {
   return (
     <div>
       <div>
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+        <div className="max-w-screen-xl mx-auto px-4 md:px-8 mt-[5rem]">
           <div className=" flex flex-col items-center">
             <p className=" text-[#8b37d8] font-bold text-2xl">
               Top Universities{" "}

@@ -38,7 +38,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth focus:scroll-auto">
+    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="Japanese Language" />
         <div className="flex flex-col lg:flex-row justify-center gap-6 my-4 lg:h-[50rem]">
@@ -58,7 +58,7 @@ const Page = () => {
               height={100}
               className="  lg:w-[90%] h-[40rem]"
             />
-            <div className=" text-slate-700">
+            <div className=" text-slate-500">
               <h1 className=" text-3xl font-bold my-3">Course Description</h1>
               <p>
                 <p className=" text-xl font-bold my-3">NAT</p>

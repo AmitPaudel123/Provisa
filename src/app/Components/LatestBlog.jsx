@@ -33,7 +33,7 @@ const LatestBlog = () => {
   ];
   return (
     <div>
-      <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8 mb-5">
+      <section className="gapping mx-auto px-4 max-w-screen-xl md:px-8 ">
         <div className="text-center">
           <div className=" flex flex-col items-center">
             <p className=" text-[#8b37d8] font-bold text-2xl">Latest Blogs </p>

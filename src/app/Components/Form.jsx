@@ -48,13 +48,16 @@ const Form = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-md h-full">
+    <div className="bg-gray-100 p-4 rounded-md h-full text">
       <h2 className="text-3xl text-[#8b37d8] font-bold mb-4">
         For Your Inquiries
       </h2>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto">
         <div className="mb-6">
-          <label htmlFor="fullName" className="block text-sm font-medium mb-1">
+          <label
+            htmlFor="fullName"
+            className="block text-sm font-medium mb-1 text"
+          >
             Full Name
           </label>
           <input
