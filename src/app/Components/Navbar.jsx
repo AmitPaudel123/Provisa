@@ -110,7 +110,7 @@ const Navbar = () => {
       )}
 
       {/* link section */}
-      <div className="lg:w-[80%]  mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 z-10 py-1">
+      <div className="lg:w-[80%]  mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 py-1 z-[999999]">
         <Link href="/" className="pb-4 cursor-pointer">
           Home
         </Link>
