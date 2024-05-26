@@ -42,7 +42,7 @@ const FloatingActionButton = () => {
         )}
       </div>
       <div
-        className={` cursor-pointer bg-purple-500 text-white p-4 rounded-full shadow-lg transform transition-transform duration-300 ${
+        className={` cursor-pointer bg-[#1c2c51] text-white p-4 rounded-full shadow-lg transform transition-transform duration-300 ${
           isOpen ? "rotate-180" : ""
         } z-[99999]`}
         onClick={handleToggle}

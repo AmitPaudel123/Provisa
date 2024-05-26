@@ -6,7 +6,7 @@ const images = [
   {
     title: "STUDY IN AUSTRALIA",
     description:
-      "Australia has one of the best institutins and universities...",
+      "Australia has one of the best institutions and universities...",
     imageSrc: "/study1.webp",
   },
   {
@@ -44,14 +44,14 @@ const LargeImageCard = ({ title, description, imageSrc }) => {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex flex-col justify-center items-center p-4">
+      <div className="absolute inset-0 bg-[#f4310a] bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex flex-col justify-center items-center p-4">
         <h3 className="text-lg lg:text-2xl font-bold text-white mb-2 opacity-0 group-hover:opacity-100 transition duration-300">
           {title}
         </h3>
         <p className="text-sm lg:text-base text-white opacity-0 group-hover:opacity-100 transition duration-300">
           {description}
         </p>
-        <button className="mt-4 px-4 py-2 bg-white text-black font-semibold rounded opacity-0 group-hover:opacity-100 transition duration-300">
+        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300">
           Learn More
         </button>
       </div>
@@ -74,14 +74,14 @@ const SmallImageCard = ({ title, description, imageSrc }) => {
           className="object-cover w-full h-full"
         />
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex flex-col justify-center items-center p-4">
+      <div className="absolute inset-0 bg-[#f4310a] bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex flex-col justify-center items-center p-4">
         <h3 className="text-lg lg:text-2xl font-bold text-white mb-2 opacity-0 group-hover:opacity-100 transition duration-300">
           {title}
         </h3>
         <p className="text-sm lg:text-base text-white opacity-0 group-hover:opacity-100 transition duration-300">
           {description}
         </p>
-        <button className="mt-4 px-4 py-2 bg-white text-black font-semibold rounded opacity-0 group-hover:opacity-100 transition duration-300">
+        <button className="mt-4 px-4 py-2 bg-blue-600 text-white  rounded opacity-0 group-hover:opacity-100 transition duration-300">
           Learn More
         </button>
       </div>
@@ -121,9 +121,9 @@ const ImageGrid = () => {
 
 const StudyAbroad = () => {
   return (
-    <div className=" gapping">
-      <div className="flex flex-col items-center">
-        <p className="text-[#8b37d8] font-bold text-2xl">Study Abroad</p>
+    <div className="gapping">
+      <div className="flex flex-col items-center mb-8">
+        <p className="text-[#2d1d54] font-bold text-2xl">Study Abroad</p>
         <p className="h-[0.3rem] bg-[#cf2e2e] w-14"></p>
       </div>
       <ImageGrid />

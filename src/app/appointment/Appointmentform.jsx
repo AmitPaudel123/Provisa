@@ -258,7 +258,7 @@ const Appointmentform = () => {
         <div className="mt-8 flex justify-end">
           <button
             type="submit"
-            className="bg-[#f74f4f] text-white py-2 px-4 rounded hover:bg-purple-700"
+            className="bg-[#cf2e2e] text-white py-2 px-4 rounded hover:bg-[#2d1d54]"
           >
             Book Free Counseling{" "}
           </button>

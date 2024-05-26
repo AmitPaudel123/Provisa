@@ -36,8 +36,8 @@ const LatestBlog = () => {
       <section className="gapping mx-auto px-4 max-w-screen-xl md:px-8 ">
         <div className="text-center">
           <div className=" flex flex-col items-center">
-            <p className=" text-[#8b37d8] font-bold text-2xl">Latest Blogs </p>
-            <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
+            <p className=" text-[#2d1d54] font-bold text-2xl">Latest Blogs </p>
+            <p className=" h-[0.3rem] bg-[#f4310a] w-14"></p>
           </div>{" "}
           <p className="mt-3 text-gray-500">
             Blogs that are loved by the community.
@@ -62,7 +62,7 @@ const LatestBlog = () => {
                     width={500}
                     height={400}
                   />
-                  <div class="absolute inset-0 bg-[#cf2e2ea8] opacity-0 hover:opacity-65 transition-opacity duration-300 rounded-t-md"></div>
+                  <div class="absolute inset-0 bg-[#f4310aa8] opacity-0 hover:opacity-65 transition-opacity duration-300 rounded-t-md"></div>
                 </div>
 
                 <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
@@ -83,7 +83,7 @@ const LatestBlog = () => {
                   </div>
                 </div>
                 <div className="pt-3 ml-4 mr-2 mb-3">
-                  <h3 className="text-xl text-[#5d37d8] font-semibold hover:text-[#cf2e2e]">
+                  <h3 className="text-xl text-[#2d1d54] font-semibold hover:text-[#f4310a]">
                     {items.title}
                   </h3>
                   <p className="text-gray-400 text-sm mt-1">{items.desc}</p>

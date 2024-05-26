@@ -10,7 +10,7 @@ const Description = () => {
   return (
     <div className="">
       <div className="bg-white  text-center px-2 lg:px-[11rem] my-16">
-        <h1 className="text-[#8b37d8]  font-semibold text-2xl mb-2">
+        <h1 className="text-[#2d1d54]  font-semibold text-2xl mb-2">
           PROFESSIONAL VISA AND EDUCATION SERVICES
         </h1>
         <p className="h-fit text-slate-600 opacity-70">

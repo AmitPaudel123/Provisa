@@ -38,7 +38,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] mx-auto">
+    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="PTE" />
         <div className="flex flex-col lg:flex-row justify-center gap-6 my-4 lg:h-[50rem]">

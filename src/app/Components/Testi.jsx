@@ -12,7 +12,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute bottom-[-3rem] right-0 bg-white h-9 w-14 text-xl rounded-md flex hover:bg-slate-800 hover:text-white justify-center items-center cursor-pointer z-[999]"
+      className="absolute bottom-[-3rem] right-0 bg-white h-9 w-14 text-xl rounded-md flex hover:bg-slate-800 hover:text-white justify-center items-center cursor-pointer"
       onClick={onClick}
     >
       <IoIosArrowForward />
@@ -24,7 +24,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute bottom-[-3rem] left-0 hover:bg-slate-800 hover:text-white bg-white h-9 w-14 text-xl rounded-md flex justify-center items-center cursor-pointer z-[999]"
+      className="absolute bottom-[-3rem] left-0 hover:bg-slate-800 hover:text-white bg-white h-9 w-14 text-xl rounded-md flex justify-center items-center cursor-pointer"
       onClick={onClick}
     >
       <IoIosArrowBack />
@@ -45,7 +45,7 @@ const Testimonials = () => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 1,
         },
@@ -54,7 +54,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-16 px-4 gapping">
+    <div className="bg-[#2d1d54] py-16 px-4 relative gapping w-full">
       <h2 className="text-center text-white text-3xl font-semibold mb-8">
         {`Student's Testimonial`}{" "}
       </h2>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                 alt="Person 1"
                 width={80}
                 height={80}
-                className="w-[5rem] h-[5rem] rounded-full"
+                className="w-[5rem] h-[5rem] rounded-full "
               />
             </div>
             <p className=" text-gray-600 mb-2">

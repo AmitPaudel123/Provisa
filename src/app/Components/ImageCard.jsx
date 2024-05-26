@@ -3,7 +3,7 @@ import Image from "next/image";
 const ImageCard = ({ imgsrc, topic }) => {
   return (
     <div>
-      <div className="relative bg-gradient-to-tr from-slate-600 to-black mt-[5rem] h-[19rem]">
+      <div className="relative bg-gradient-to-tr from-slate-600 to-black mt-[5rem] h-[19rem] mb-[4rem]">
         <Image
           src={imgsrc}
           alt="slider"

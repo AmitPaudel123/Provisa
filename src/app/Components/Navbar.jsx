@@ -54,15 +54,22 @@ const Navbar = () => {
       {/* Navbar for larger device----------------------------------------------------------- */}
       {/* top navbar */}
       {hideNav && (
-        <div className="bg-[#cf2e2e] text-white py-3 hidden lg:flex justify-evenly lg:px-2 xl:px-8 items-center top-nav">
+        <div className="bg-[#f4310a] text-white py-3 hidden lg:flex justify-evenly lg:px-2 xl:px-8 items-center top-nav">
           <div className="flex items-center space-x-4">
-            <a href="https://facebook.com" target="_blank">
+            <a
+              href="https://web.facebook.com/provisa.com.np/?_rdc=1&_rdr"
+              target="_blank"
+            >
               <FaFacebookF className=" size-4 icon-hover" />
             </a>
-            <a href="https://instagram.com" target="_blank" className="text-lg">
+            <a
+              href="https://www.instagram.com/PROVISANEPAL/"
+              target="_blank"
+              className="text-lg"
+            >
               <FaInstagram className=" icon-hover" />
             </a>
-            <a href="https://twitter.com" target="_blank" className="text-lg">
+            <a href="https://x.com/" target="_blank" className="text-lg">
               <FaTwitter className=" icon-hover" />
             </a>
             <a href="https://youtube.com" target="_blank" className="text-lg">
@@ -88,7 +95,10 @@ const Navbar = () => {
       {/* logo section */}
       {hideNav && (
         <div className=" hidden lg:flex items-center justify-between px-5 xl:px-0 lg:w-[90%] xl:w-[80%]  mx-auto border-b-[1px] border-b-orange-500">
-          <Image src="/logo.png" alt="company logo" width={300} height={20} />
+          <Link href="/">
+            {" "}
+            <Image src="/logo.png" alt="company logo" width={300} height={20} />
+          </Link>{" "}
           <div className=" flex items-center gap-10">
             <div className=" flex items-center gap-[0.15rem]">
               <FaPhoneAlt className=" text-2xl font-bold text-slate-600" />
@@ -101,7 +111,7 @@ const Navbar = () => {
             </div>
             <Link
               href="/appointment"
-              className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm"
+              className=" text-white bg-[#f4310a] px-2 py-3 rounded-sm"
             >
               Book an Appointment
             </Link>
@@ -158,12 +168,12 @@ const Navbar = () => {
               >
                 Testimonial
               </Link>
-              <Link
-                href="/"
+              <a
+                href="https://docs.google.com/document/d/1IwMBCj07x4_AgAhs5k_vZKK0wsY_8EF0rNdyuc5D8KQ/edit"
                 className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
               >
                 Company Profile
-              </Link>
+              </a>
             </div>
           )}
         </Link>
@@ -313,7 +323,15 @@ const Navbar = () => {
       {hideNav && (
         <div className=" flex flex-col lg:hidden items-start justify-between md:px-5 py-2 mx-auto border-b-[1px] border-b-orange-500 ">
           <div className=" flex justify-center md:justify-start w-full">
-            <Image src="/logo.png" alt="company logo" width={250} height={20} />
+            <Link href="/">
+              {" "}
+              <Image
+                src="/logo.png"
+                alt="company logo"
+                width={300}
+                height={20}
+              />
+            </Link>{" "}
           </div>
 
           <div className=" flex justify-between px-3 md:mx-0 md:justify-end md:gap-16 w-full">
@@ -328,7 +346,7 @@ const Navbar = () => {
             </div>
             <Link
               href="/appointment"
-              className=" text-white bg-[#cf2e2e] px-2 py-3 rounded-sm"
+              className=" text-white bg-[#f4310a] px-2 py-3 rounded-sm"
             >
               Book an Appointment
             </Link>
@@ -338,16 +356,19 @@ const Navbar = () => {
 
       {/* menu btn and link section */}
       {/* menu button */}
-      <div
-        className=" lg:hidden flex justify-end gap-6 bg-white shadow-sm shadow-slate-400 py-2 px-4"
-        onClick={() => {
-          setDisplayMenu(!displayMenu);
-        }}
-      >
-        {hideLogo && (
-          <Image src="/logo.png" alt="company logo" width={150} height={20} />
-        )}
-        <button className=" text-2xl font-bold mx-2">
+      <div className=" lg:hidden flex justify-between  items-center bg-white shadow-sm shadow-slate-400 py-2 px-4">
+        {/* {hideLogo && ( */}
+        <Link href="/">
+          {" "}
+          <Image src="/logo.png" alt="company logo" width={140} height={20} />
+        </Link>{" "}
+        {/* )} */}
+        <button
+          className=" text-2xl text-[#0f172a]  font-bold mx-2 self-end"
+          onClick={() => {
+            setDisplayMenu(!displayMenu);
+          }}
+        >
           <CgMenuRight />{" "}
         </button>
       </div>
@@ -359,7 +380,7 @@ const Navbar = () => {
       >
         {/* close btn */}
         <button
-          className=" flex justify-end mx-4 text-2xl "
+          className=" flex justify-end mx-4 text-2xl text-[#0f172a]"
           onClick={() => {
             setDisplayMenu(!displayMenu);
           }}
@@ -368,8 +389,11 @@ const Navbar = () => {
           <RiCloseLine />
         </button>
 
-        <div className=" flex justify-start w-full mb-5 ">
-          <Image src="/logo.png" alt="company logo" width={250} height={20} />
+        <div className=" w-full mb-5 ">
+          <Link href="/">
+            {" "}
+            <Image src="/logo.png" alt="company logo" width={300} height={20} />
+          </Link>{" "}
         </div>
         <Link
           href="/"
@@ -381,10 +405,13 @@ const Navbar = () => {
         </Link>
         <div>
           <div
-            className="flex gap-2 items-center cursor-pointer"
+            className="side_nav_link"
             onClick={() => setDisplayAbout(!displayAbout)}
           >
-            <span>About us</span> <IoIosArrowDown />
+            <p>About us</p>{" "}
+            <div className=" side_nav_link-btn">
+              <IoIosArrowDown />
+            </div>
           </div>
           <div
             className={`transition-all duration-300 ${
@@ -450,13 +477,15 @@ const Navbar = () => {
         </div>
 
         <div>
-          <Link
-            href=""
-            className="flex gap-2 items-center cursor-pointer"
+          <div
+            className="side_nav_link"
             onClick={() => setDisplayServices(!displayServices)}
           >
-            <span>Our services</span> <IoIosArrowDown />
-          </Link>
+            <p>Our services</p>{" "}
+            <div className="side_nav_link-btn">
+              <IoIosArrowDown />
+            </div>
+          </div>
           <div
             className={`transition-all duration-300 ${
               displayServices ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
@@ -513,10 +542,13 @@ const Navbar = () => {
 
         <div>
           <div
-            className="flex gap-2 items-center cursor-pointer"
+            className="side_nav_link"
             onClick={() => setdisplayAbroadStd(!displayAbroadStd)}
           >
-            <span>Abroad Study</span> <IoIosArrowDown />
+            <p>Abroad Study</p>{" "}
+            <div className=" side_nav_link-btn">
+              <IoIosArrowDown />
+            </div>
           </div>
           <div
             className={`transition-all duration-300 ${
@@ -576,10 +608,13 @@ const Navbar = () => {
 
         <div>
           <div
-            className="flex gap-2 items-center cursor-pointer"
+            className="side_nav_link"
             onClick={() => setDisplayPreparation(!displayPreparation)}
           >
-            <span>Test Preparation</span> <IoIosArrowDown />
+            <p>Test Preparation</p>{" "}
+            <div className="side_nav_link-btn">
+              <IoIosArrowDown />
+            </div>{" "}
           </div>
           <div
             className={`transition-all duration-300 ${
@@ -645,9 +680,10 @@ const Navbar = () => {
           Contact Us
         </Link>
 
-        <div className=" flex gap-3">
+        <div className=" flex items-center gap-3">
           <a
-            className=" p-1 bg-blue-700 text-white"
+            href="https://web.facebook.com/provisa.com.np/?_rdc=1&_rdr"
+            className=" p-3 rounded-full bg-slate-200 text-blue-700 hover:scale-110 text-xl"
             onClick={() => {
               setDisplayMenu(false);
             }}
@@ -656,7 +692,8 @@ const Navbar = () => {
           </a>
 
           <a
-            className=" p-1 bg-blue-400 text-white"
+            href="https://x.com/"
+            className=" p-2 rounded-full bg-slate-200 text-blue-400 hover:scale-110 text-2xl"
             onClick={() => {
               setDisplayMenu(false);
             }}
@@ -664,7 +701,8 @@ const Navbar = () => {
             <FaTwitter />{" "}
           </a>
           <a
-            className=" p-1 bg-blue-500 text-white"
+            href="https://www.instagram.com/PROVISANEPAL/"
+            className=" p-2 rounded-full bg-slate-200 text-pink-600 hover:scale-110 text-2xl"
             onClick={() => {
               setDisplayMenu(false);
             }}
@@ -672,7 +710,8 @@ const Navbar = () => {
             <FaInstagram />{" "}
           </a>
           <a
-            className=" p-1 bg-red-700 text-white"
+            href="https://www.youtube.com/"
+            className="  text-red-500 hover:scale-110 text-2xl p-2 rounded-full bg-slate-200"
             onClick={() => {
               setDisplayMenu(false);
             }}

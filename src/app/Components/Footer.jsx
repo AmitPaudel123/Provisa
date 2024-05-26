@@ -13,19 +13,22 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className=" flex flex-col gap-2 lg:gap-1 lg:flex-row md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="" className="flex  flex-col">
-                <Image
-                  src="/footerlogo.png"
-                  width={250}
-                  height={100}
-                  alt="footer Logo"
-                />
+              <p className="flex  flex-col">
+                <Link href="/">
+                  {" "}
+                  <Image
+                    src="/footerlogo.png"
+                    width={250}
+                    height={100}
+                    alt="footer Logo"
+                  />
+                </Link>
                 <div className="w-60 text-slate-500">
                   {
                     "Don't just take our word for it, come see us and let us show you that you've come to the right place."
                   }
                 </div>
-              </a>
+              </p>
             </div>
             <div className="flex flex-col md:flex-row flex-shrink-0 justify-between gap-3 lg:w-[70%]">
               <div>
@@ -96,19 +99,25 @@ const Footer = () => {
               Pvt.Ltd. All Rights Reserved.
             </span>
             <div className="flex mt-4 sm:justify-center sm:mt-0">
-              <a href="#" className="text-white">
+              <a
+                href="https://web.facebook.com/provisa.com.np/?_rdc=1&_rdr"
+                className="text-white"
+              >
                 <FaFacebookF />
                 <span className="sr-only">Facebook page</span>
               </a>
-              <a href="#" className="text-gray-50 ms-5">
+              <a
+                href="https://www.instagram.com/PROVISANEPAL/"
+                className="text-gray-50 ms-5"
+              >
                 <FaInstagram />
                 <span className="sr-only">Instagram account</span>
               </a>
-              <a href="#" className=" ms-5">
+              <a href="https://x.com/" className=" ms-5">
                 <FaTwitter />
                 <span className="sr-only">Twitter page</span>
               </a>
-              <a href="#" className="ms-5">
+              <a href="https://youtube.com" className="ms-5">
                 <FaYoutube />
                 <span className="sr-only">Youtube</span>
               </a>

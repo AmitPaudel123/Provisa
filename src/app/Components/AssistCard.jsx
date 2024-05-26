@@ -46,12 +46,12 @@ const AssistCard = () => {
     <section className="gapping bg-white">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className=" flex flex-col items-center">
-          <p className=" text-[#8b37d8] font-bold text-2xl">
+          <p className=" text-[#2d1d54] font-bold text-2xl">
             We Assist You With
           </p>
           <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
         </div>
-        <ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 hfi">
           {integrations.map((item, idx) => {
             return (
               <Link
