@@ -17,7 +17,7 @@ const Form = () => {
         <Appointmentform />
       </div>
 
-      <div className="my-8">
+      <div className="my-10">
         <div className="bg-gray-100">
           {/* Full-screen section with fixed background image */}
           <div
@@ -41,7 +41,7 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <div className="my-8">
+      <div className="my-10">
         <Location />
       </div>
     </>

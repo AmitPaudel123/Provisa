@@ -100,7 +100,7 @@ const Navbar = () => {
             <Image src="/logo.png" alt="company logo" width={300} height={20} />
           </Link>{" "}
           <div className=" flex items-center gap-10">
-            <div className=" flex items-center gap-[0.15rem]">
+            <div className=" flex items-center gap-[0.25rem]">
               <FaPhoneAlt className=" text-2xl font-bold text-slate-600" />
               <p className=" text-sm">
                 Speak with us: <br />{" "}
@@ -138,39 +138,24 @@ const Navbar = () => {
           About us <IoIosArrowDown />
           {showAbout && (
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
-              <Link
-                href="/about"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/about" className=" nav_link py-2 px-4">
                 Who we are
               </Link>
-              <Link
-                href="/about/message"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/about/message" className=" nav_link py-2 px-4">
                 Message from M.D
               </Link>
-              <Link
-                href="/about/team"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/about/team" className=" nav_link py-2 px-4">
                 Our Team
               </Link>
-              <Link
-                href="/about/universities"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/about/universities" className=" nav_link py-2 px-4">
                 Universities
               </Link>
-              <Link
-                href="/about/testimonial"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/about/testimonial" className=" nav_link py-2 px-4">
                 Testimonial
               </Link>
               <a
                 href="https://docs.google.com/document/d/1IwMBCj07x4_AgAhs5k_vZKK0wsY_8EF0rNdyuc5D8KQ/edit"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
+                className=" nav_link py-2 px-4"
               >
                 Company Profile
               </a>
@@ -191,34 +176,19 @@ const Navbar = () => {
           Our services <IoIosArrowDown />{" "}
           {showServices && (
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
-              <Link
-                href="/services/briefing"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/services/briefing" className=" nav_link py-2 px-4">
                 Pre-Depature Briefing{" "}
               </Link>
-              <Link
-                href="/services/visa"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/services/visa" className=" nav_link py-2 px-4">
                 Visa Guidance{" "}
               </Link>
-              <Link
-                href="/services/finance"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/services/finance" className=" nav_link py-2 px-4">
                 Finance & Scholarship{" "}
               </Link>
-              <Link
-                href="/services/counseling"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/services/counseling" className=" nav_link py-2 px-4">
                 Carrer Counseling{" "}
               </Link>
-              <Link
-                href="/services/interview"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/services/interview" className=" nav_link py-2 px-4">
                 Interview preparance and Guidance{" "}
               </Link>
             </div>
@@ -240,32 +210,20 @@ const Navbar = () => {
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
               <Link
                 href="/abroadstudy/australia"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
+                className=" nav_link py-2 px-4"
               >
                 Study in Australia
               </Link>
-              <Link
-                href="/abroadstudy/canada"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/abroadstudy/canada" className=" nav_link py-2 px-4">
                 Study in Canada
               </Link>
-              <Link
-                href="/abroadstudy/uk"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/abroadstudy/uk" className=" nav_link py-2 px-4">
                 Study in UK
               </Link>
-              <Link
-                href="/abroadstudy/japan"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/abroadstudy/japan" className=" nav_link py-2 px-4">
                 Study in Japan
               </Link>
-              <Link
-                href="/abroadstudy/usa"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/abroadstudy/usa" className=" nav_link py-2 px-4">
                 Study in USA
               </Link>
             </div>
@@ -288,20 +246,17 @@ const Navbar = () => {
             <div className="  flex absolute top-[2.47rem] bg-white shadow-sm shadow-slate-400 flex-col w-[18rem] text-slate-600">
               <Link
                 href="/testpreperation/ielts"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
+                className=" nav_link py-2 px-4"
               >
                 IELTS{" "}
               </Link>
               <Link
                 href="/testpreperation/japaneselan"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
+                className=" nav_link py-2 px-4"
               >
                 JAPENESE LANGUAGE{" "}
               </Link>
-              <Link
-                href="/testpreperation/pte"
-                className=" hover:bg-[#9b51e0] hover:text-white py-2 px-4"
-              >
+              <Link href="/testpreperation/pte" className=" nav_link py-2 px-4">
                 PTE{" "}
               </Link>
             </div>
@@ -360,11 +315,11 @@ const Navbar = () => {
         {/* {hideLogo && ( */}
         <Link href="/">
           {" "}
-          <Image src="/logo.png" alt="company logo" width={140} height={20} />
+          <Image src="/logo.png" alt="company logo" width={200} height={20} />
         </Link>{" "}
         {/* )} */}
         <button
-          className=" text-2xl text-[#0f172a]  font-bold mx-2 self-end"
+          className=" text-4xl text-[#0f172a]  font-bold mx-2 self-end mb-2"
           onClick={() => {
             setDisplayMenu(!displayMenu);
           }}
@@ -374,7 +329,7 @@ const Navbar = () => {
       </div>
       {/* link section  */}
       <div
-        className={` flex flex-col lg:hidden fixed gap-4 w-[70%] md:w-[40%] h-screen bg-white top-0 left-0 z-10 py-5 pr-2b text-lg pl-7 transform transition-transform duration-300 ease-in-out shadow-sm shadow-black ${
+        className={` flex flex-col lg:hidden fixed gap-4 w-[70%] md:w-[40%] h-screen bg-white top-0 left-0 z-10 py-5 pr-2b text-lg pl-4 transform transition-transform duration-300 ease-in-out shadow-sm shadow-black ${
           displayMenu ? "translate-x-0" : "-translate-x-full "
         }`}
       >
@@ -680,10 +635,10 @@ const Navbar = () => {
           Contact Us
         </Link>
 
-        <div className=" flex items-center gap-3">
+        <div className=" flex items-center gap-2">
           <a
             href="https://web.facebook.com/provisa.com.np/?_rdc=1&_rdr"
-            className=" p-3 rounded-full bg-slate-200 text-blue-700 hover:scale-110 text-xl"
+            className=" p-2 rounded-full bg-slate-200 hover:scale-110 text-xl"
             onClick={() => {
               setDisplayMenu(false);
             }}
@@ -693,7 +648,7 @@ const Navbar = () => {
 
           <a
             href="https://x.com/"
-            className=" p-2 rounded-full bg-slate-200 text-blue-400 hover:scale-110 text-2xl"
+            className=" p-2 rounded-full bg-slate-200 hover:scale-110 text-xl"
             onClick={() => {
               setDisplayMenu(false);
             }}
@@ -702,7 +657,7 @@ const Navbar = () => {
           </a>
           <a
             href="https://www.instagram.com/PROVISANEPAL/"
-            className=" p-2 rounded-full bg-slate-200 text-pink-600 hover:scale-110 text-2xl"
+            className=" p-2 rounded-full bg-slate-200 hover:scale-110 text-xl"
             onClick={() => {
               setDisplayMenu(false);
             }}
@@ -711,7 +666,7 @@ const Navbar = () => {
           </a>
           <a
             href="https://www.youtube.com/"
-            className="  text-red-500 hover:scale-110 text-2xl p-2 rounded-full bg-slate-200"
+            className="  hover:scale-110 text-xl p-2 rounded-full bg-slate-200"
             onClick={() => {
               setDisplayMenu(false);
             }}

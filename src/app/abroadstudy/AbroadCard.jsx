@@ -18,8 +18,15 @@ const AbroadCard = ({
   return (
     <div className=" mt-[12rem] text">
       <ImageCard topic={topic} imgsrc={imgsrc} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-6 my-4">
-        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%]">
+      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-4  ">
+        <div
+          className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%] lg:h-[80rem] lg:overflow-y-scroll"
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+            WebkitOverflowScrolling: "touch",
+          }}
+        >
           <div>
             <Image
               src={bannerimg}
@@ -37,7 +44,9 @@ const AbroadCard = ({
               WebkitOverflowScrolling: "touch",
             }}
           >
-            <p className=" text-[#9b51e0] text-3xl font-semibold">{topic}</p>
+            <p className=" text-[#2d1d54] text-2xl font-semibold mt-2">
+              {topic}
+            </p>
             <ul className="list-disc list-inside pl-5 py-3">
               {descLists && descLists.length > 0
                 ? descLists.map((data, index) => (
@@ -49,7 +58,9 @@ const AbroadCard = ({
             </ul>
             <p>{description}</p>
             <div className="py-3">
-              <p className=" text-3xl font-semibold mb-1">Education System</p>
+              <p className=" text-[#2d1d54] text-2xl font-semibold mt-2">
+                Education System
+              </p>
               {eduSystem && eduSystem.length > 0
                 ? eduSystem.map((data, index) => (
                     <p key={index} className="mb-2">
@@ -62,9 +73,7 @@ const AbroadCard = ({
             <div>
               {ug && ug.length > 0 ? (
                 <div>
-                  <p className=" text-2xl font-semibold">
-                    Undergraduate Degree
-                  </p>
+                  <p className=" text-xl font-semibold">Undergraduate Degree</p>
                   <p>{ug}</p>
                 </div>
               ) : (
@@ -74,7 +83,7 @@ const AbroadCard = ({
             <div>
               {pg && pg.length > 0 ? (
                 <div className=" my-3">
-                  <p className=" text-2xl font-semibold">PostGradute Degree</p>
+                  <p className=" text-xl font-semibold">PostGradute Degree</p>
                   <p>{pg}</p>
                 </div>
               ) : (
@@ -84,9 +93,9 @@ const AbroadCard = ({
 
             <div className="mt-8">
               {qualifications && qualifications.length > 0 ? (
-                <p className=" text-2xl font-bold mb-2">
-                  QUALIFICTION AND REQUIREMENT TO STUDY IN AUSTRALIA FOR NEPALI
-                  STUDENTS
+                <p className=" text-[#2d1d54] text-2xl font-semibold my-2">
+                  Qualification & Requirement to Study in Australia for Nepali
+                  Students
                 </p>
               ) : (
                 ""
@@ -110,7 +119,9 @@ const AbroadCard = ({
             </div>
             <div className="py-3">
               {livingCost && livingCost.length > 0 ? (
-                <p className=" text-3xl font-semibold mb-1">Cost of Living</p>
+                <p className=" text-[#2d1d54] text-2xl font-semibold mt-2">
+                  Cost of Living
+                </p>
               ) : (
                 ""
               )}

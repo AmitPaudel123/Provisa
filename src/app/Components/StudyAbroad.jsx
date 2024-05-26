@@ -1,38 +1,43 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const images = [
   {
     title: "STUDY IN AUSTRALIA",
     description:
       "Australia has one of the best institutions and universities...",
     imageSrc: "/study1.webp",
+    links: "/abroadstudy/australia",
   },
   {
     title: "STUDY IN EUROPE",
     description: "In terms of research and education, Europe is a...",
     imageSrc: "/study2.webp",
+    links: "/abroadstudy/australia",
   },
   {
     title: "STUDY IN JAPAN",
     description: "Education System in Japan In the decades following world...",
     imageSrc: "/study3.webp",
+    links: "/abroadstudy/japan",
   },
   {
     title: "STUDY IN CANADA",
     description:
       "Study system in the Canada Its common knowledge that studying...",
     imageSrc: "/study2.webp",
+    links: "/abroadstudy/canada",
   },
   {
     title: "STUDY IN USA",
     description: "Study system in the USA are the two major intake...",
     imageSrc: "/study2.webp",
+    links: "/abroadstudy/usa",
   },
 ];
 
-const LargeImageCard = ({ title, description, imageSrc }) => {
+const LargeImageCard = ({ title, description, imageSrc, links }) => {
   return (
     <div className="relative group overflow-hidden rounded-lg shadow-lg h-[30rem]">
       <div className="relative w-full h-full">
@@ -51,9 +56,12 @@ const LargeImageCard = ({ title, description, imageSrc }) => {
         <p className="text-sm lg:text-base text-white opacity-0 group-hover:opacity-100 transition duration-300">
           {description}
         </p>
-        <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300">
+        <Link
+          href={links}
+          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded opacity-0 group-hover:opacity-100 transition duration-300"
+        >
           Learn More
-        </button>
+        </Link>
       </div>
       <h3 className="absolute bottom-4 left-4 text-lg lg:text-2xl font-bold text-white z-10 group-hover:opacity-0 transition duration-300">
         {title}
@@ -62,7 +70,7 @@ const LargeImageCard = ({ title, description, imageSrc }) => {
   );
 };
 
-const SmallImageCard = ({ title, description, imageSrc }) => {
+const SmallImageCard = ({ title, description, imageSrc, links }) => {
   return (
     <div className="relative group overflow-hidden rounded-lg shadow-lg h-[15rem]">
       <div className="relative w-full h-full">
@@ -81,9 +89,12 @@ const SmallImageCard = ({ title, description, imageSrc }) => {
         <p className="text-sm lg:text-base text-white opacity-0 group-hover:opacity-100 transition duration-300">
           {description}
         </p>
-        <button className="mt-4 px-4 py-2 bg-blue-600 text-white  rounded opacity-0 group-hover:opacity-100 transition duration-300">
+        <Link
+          href={links}
+          className="mt-4 px-4 py-2 bg-blue-600 text-white  rounded opacity-0 group-hover:opacity-100 transition duration-300"
+        >
           Learn More
-        </button>
+        </Link>
       </div>
       <h3 className="absolute bottom-4 left-4 text-lg lg:text-2xl font-bold text-white z-10 group-hover:opacity-0 transition duration-300">
         {title}
@@ -103,6 +114,7 @@ const ImageGrid = () => {
           title={largeImage.title}
           description={largeImage.description}
           imageSrc={largeImage.imageSrc}
+          links={largeImage.links}
         />
       </div>
       <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -112,6 +124,7 @@ const ImageGrid = () => {
             title={image.title}
             description={image.description}
             imageSrc={image.imageSrc}
+            links={image.links}
           />
         ))}
       </div>

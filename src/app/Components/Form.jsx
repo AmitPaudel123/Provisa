@@ -49,7 +49,7 @@ const Form = () => {
 
   return (
     <div className="bg-gray-100 p-4 rounded-md h-full text">
-      <h2 className="text-3xl text-center text-[#2d1d54] font-bold mb-4">
+      <h2 className="text-2xl  text-[#2d1d54] font-semibold mb-4">
         For Your Inquiries
       </h2>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto">
@@ -130,7 +130,7 @@ const Form = () => {
         </div>
         <button
           type="submit"
-          className="bg-[#cf2e2e] text-white font-semibold px-4 py-2 rounded-md hover:bg-[#2d1d54] transition-colors"
+          className="bg-[#cf2e2e] text-white px-4 py-2 rounded-md hover:bg-[#2d1d54] transition-colors"
         >
           Submit
         </button>

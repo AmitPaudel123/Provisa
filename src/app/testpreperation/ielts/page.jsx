@@ -38,10 +38,10 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto">
+    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto text">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="IELTS" />
-        <div className="flex flex-col lg:flex-row justify-center gap-6 my-4 lg:h-[50rem]">
+        <div className="flex flex-col lg:flex-row justify-center gap-12 my-4 lg:h-[50rem]">
           <div
             className=" w-[90%] lg:w-[50%] mx-auto lg:mx-0 lg:overflow-y-auto"
             style={{
@@ -52,8 +52,10 @@ const Page = () => {
             ref={leftRef}
           >
             <Image src="/ielts.webp" alt="IELTS" width={700} height={100} />
-            <div className=" text-slate-500">
-              <h1 className=" text-3xl font-bold my-3">Course Description</h1>
+            <div>
+              <h1 className=" text-2xl font-semibold text-[#2d1d54] mt-4 mb-1">
+                Course Description
+              </h1>
               <p>
                 The International English Language Testing System (IELTS) is a
                 globally recognized and standardized English language assessment
@@ -67,7 +69,9 @@ const Page = () => {
                 test for Australian immigration, as well as the United Kingdom
                 and Canada.
               </p>
-              <h1 className=" text-xl font-bold my-3">TYPES OF IELTS TEST</h1>
+              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                TYPES OF IELTS TEST
+              </h1>
               <ol className="  list-decimal list-inside">
                 <li>
                   Academic IELTS
@@ -87,7 +91,7 @@ const Page = () => {
                   </p>
                 </li>
               </ol>
-              <h1 className=" text-xl font-bold my-3">
+              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                 STRUCTURE OF IELTS TEST
               </h1>
               <p>
@@ -105,7 +109,9 @@ const Page = () => {
                 but the writing and reading sections differ slightly. <br />
                 An IELTS result is valid for 2 years.
               </p>
-              <h1 className=" text-xl font-bold my-3">IELTS BAND SCORES</h1>
+              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                IELTS BAND SCORES
+              </h1>
               <p>
                 The overall band score is the average of the four sections
                 scores, rounded to the nearest whole or half band. The sections

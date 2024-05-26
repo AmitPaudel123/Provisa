@@ -70,15 +70,15 @@ const Testimonials = () => {
                 className="w-[5rem] h-[5rem] rounded-full "
               />
             </div>
-            <p className=" text-gray-600 mb-2">
+            <p className=" text-black mb-2">
               PROVISA provided me great assistance on my student visa approval.
               I really appreciate your efforts, consultation and customer
               services. Thank you PROVISA for guiding me throug the right path
               in my life. You helped me with my life changing decision. I will
               be forever grateful for your help and great assistance.
             </p>
-            <p className="text-gray-600 font-bold">- David Herioc</p>
-            <p className=" text-gray-600 ">The University of Australia</p>
+            <p className="text-slate-700 text-lg">- David Herioc</p>
+            <p className=" text-slate-700 ">The University of Australia</p>
           </div>
           <div className="p-4 bg-white rounded-lg shadow-lg text-center">
             <div className="relative w-24 h-24 mx-auto mb-4">
@@ -90,15 +90,15 @@ const Testimonials = () => {
                 className=" w-[5rem] h-[5rem] rounded-full"
               />
             </div>
-            <p className="  text-gray-600 mb-2">
+            <p className="  text-black mb-2">
               I feel very lucky to be part of PROVISA. I got perfect counselling
               during my test preparation, documentation preparation, visa
               application and SOP writing writing which helped me in visa
               approval. I would recommend PROVISA as a perfect education partner
               to everyone out there tryinh for international study
             </p>
-            <p className="text-gray-600 font-bold">- Suman Shrestha</p>
-            <p className=" text-gray-600">The University of Australia</p>
+            <p className="text-slate-700 text-lg">- Suman Shrestha</p>
+            <p className=" text-slate-700">The University of Australia</p>
           </div>
         </Slider>
       </div>

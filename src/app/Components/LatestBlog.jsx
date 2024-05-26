@@ -39,7 +39,7 @@ const LatestBlog = () => {
             <p className=" text-[#2d1d54] font-bold text-2xl">Latest Blogs </p>
             <p className=" h-[0.3rem] bg-[#f4310a] w-14"></p>
           </div>{" "}
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 text-header">
             Blogs that are loved by the community.
           </p>
         </div>
@@ -74,10 +74,10 @@ const LatestBlog = () => {
                     />
                   </div>
                   <div className="ml-3">
-                    <span className="block text-gray-900 font-semibold">
+                    <span className="block text-header font-semibold">
                       {items.authorName}
                     </span>
-                    <span className="block text-gray-400 text-sm">
+                    <span className="block text-gray-500 text-sm">
                       {items.date}
                     </span>
                   </div>
@@ -86,7 +86,7 @@ const LatestBlog = () => {
                   <h3 className="text-xl text-[#2d1d54] font-semibold hover:text-[#f4310a]">
                     {items.title}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-1">{items.desc}</p>
+                  <p className="text text-sm mt-1">{items.desc}</p>
                 </div>
               </a>
             </article>

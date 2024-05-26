@@ -10,7 +10,14 @@
     @apply scale-125;
   }
   .text {
-    @apply text-slate-500;
+    @apply text-slate-700;
+  }
+  .header-text {
+    @apply text-slate-900;
+  }
+
+  .nav_link:hover {
+    @apply bg-[#2d1d54] text-white;
   }
   .gapping {
     @apply my-[6rem] lg:w-[80%] mx-auto;
@@ -22,9 +29,11 @@
     @apply underline;
   }
   .footer-txt {
-    @apply text-slate-500 opacity-90;
+    @apply text-slate-300 opacity-90;
   }
-
+  .footer-txt:hover {
+    @apply text-slate-400;
+  }
   .side_nav_link {
     @apply flex gap-2 justify-between items-center pr-7 cursor-pointer;
   }
@@ -101,6 +110,6 @@ body {
 
 @media screen and (min-width: 1024px) {
   .slick-slide > div {
-    margin: 0 10px;
+    margin: 0 30px;
   }
 }

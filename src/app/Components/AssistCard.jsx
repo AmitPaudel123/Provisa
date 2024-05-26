@@ -55,7 +55,7 @@ const AssistCard = () => {
           {integrations.map((item, idx) => {
             return (
               <Link
-                href="/"
+                href={item.link}
                 className="border rounded-lg hover:scale-105 hover:shadow-sm duration-150 hover:shadow-slate-400 shadow-sm"
                 key={idx}
               >
@@ -71,18 +71,16 @@ const AssistCard = () => {
                       />
                     </div>
 
-                    <h4 className="text-[#cf2e2e] opacity-70 font-semibold">
+                    <h4 className="text-[#f4310a] opacity-80 font-semibold">
                       {item.title}
                     </h4>
-                    <p className=" text-sm text-slate-600 opacity-80">
-                      {item.desc}
-                    </p>
+                    <p className=" text-sm">{item.desc}</p>
                   </div>
                 </div>
                 <div className="py-5 px-4 border-t text-right">
                   <Link
                     href={item.link}
-                    className="text-indigo-600 hover:text-indigo-500 text-sm font-medium"
+                    className="text-indigo-500 hover:text-indigo-500 text-sm font-medium"
                   >
                     Learn more
                   </Link>

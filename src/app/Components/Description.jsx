@@ -10,10 +10,10 @@ const Description = () => {
   return (
     <div className="">
       <div className="bg-white  text-center px-2 lg:px-[11rem] my-16">
-        <h1 className="text-[#2d1d54]  font-semibold text-2xl mb-2">
+        <h1 className="text-[#2d1d54]  font-semibold text-2xl mb-4">
           PROFESSIONAL VISA AND EDUCATION SERVICES
         </h1>
-        <p className="h-fit text-slate-600 opacity-70">
+        <p className="h-fit text mx-3 lg:mx-0">
           {` Professional Visa and Education Services Pvt. Ltd. (Pro-Visa) is a
           professional visa and educational consultancy authorized by the
           Ministry of Education (MOE) and offering free education to students
@@ -29,7 +29,7 @@ const Description = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <div className="relative w-full h-[35rem] lg:h-96">
+        <div className="relative w-full h-[35rem] lg:h-96 py-3">
           {/* Background Image */}
           <Image
             src="/sliderimg2.webp"
@@ -67,7 +67,7 @@ const Description = () => {
                 <PiStudentBold />
               </div>
               <div className="text-xl font-bold text-center">
-                <p>1500+/</p>
+                <p>1500+</p>
                 <p>Happy Students</p>
               </div>
             </div>

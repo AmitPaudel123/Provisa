@@ -94,7 +94,7 @@ const FaqPage = () => {
 
   return (
     <section className="leading-relaxed max-w-screen-xl mx-auto px-4 md:px-8">
-      <div className="mt-14 max-w-2xl mx-auto">
+      <div className=" max-w-2xl mx-auto">
         {faqsList.map((item, idx) => (
           <FaqsCard key={idx} idx={idx} faqsList={item} />
         ))}
@@ -109,10 +109,10 @@ const Faq = () => {
       <ImageCard imgsrc={"/faqimg.webp"} topic={`FAQ'S`} />
 
       <div className="flex flex-col lg:flex-row justify-center gap-10 mt-[2rem] py-6 px-6">
-        <div className=" lg:w-[50%]">
+        <div className=" lg:w-[50%] lg:-mt-5">
           <FaqPage />
         </div>
-        <div className=" flex flex-col gap-3  lg:w-[25%]">
+        <div className=" flex flex-col gap-8 lg:gap-4  lg:w-[25%]">
           <ContactCard />
           <Form />
         </div>

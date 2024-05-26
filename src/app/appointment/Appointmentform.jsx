@@ -19,7 +19,9 @@ const Appointmentform = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-5xl mx-auto p-8 bg-gray-100 shadow-md rounded-lg mt-[2rem] mb-3 z-20"
       >
-        <h2 className="text-2xl font-bold mb-4">Personal Information</h2>
+        <h2 className="text-2xl font-bold mb-4 header-text">
+          Personal Information
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium mb-2">Full Name</label>
@@ -77,10 +79,12 @@ const Appointmentform = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">Education Details</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 header-text">
+          Education Details
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-medium mb-2">
+            <label className="block text-sm font-medium mb-2  ">
               Current Qualification
             </label>
             <select
@@ -150,7 +154,9 @@ const Appointmentform = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">Abroad Study</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 header-text">
+          Abroad Study
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium mb-2">
@@ -238,7 +244,9 @@ const Appointmentform = () => {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">Booking</h2>
+        <h2 className="text-2xl font-semibold mt-8 mb-4 header-text">
+          Booking
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium mb-2">

@@ -10,7 +10,7 @@ const page = () => {
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[20%]">
           <ContactCard />
         </div>
-        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[70%]">
+        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[70%] mt-[-6rem]">
           <Testimonials />
         </div>
       </div>

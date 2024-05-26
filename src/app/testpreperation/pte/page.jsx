@@ -38,10 +38,10 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto">
+    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto text-ellipsis">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="PTE" />
-        <div className="flex flex-col lg:flex-row justify-center gap-6 my-4 lg:h-[50rem]">
+        <div className="flex flex-col lg:flex-row justify-center gap-12 my-4 lg:h-[50rem]">
           <div
             className=" w-[90%] lg:w-[60%] mx-auto lg:mx-0 lg:overflow-y-auto"
             style={{
@@ -58,8 +58,10 @@ const Page = () => {
               height={100}
               className="  lg:w-[90%] h-[30rem]"
             />
-            <div className=" text-slate-500">
-              <h1 className=" text-3xl font-bold my-3">Course Description</h1>
+            <div>
+              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                Course Description
+              </h1>
               <p>
                 Pearson English Tests (PTE) Academic English is a language test
                 used for international study and immigration. It’s a
@@ -111,7 +113,7 @@ const Page = () => {
                 <a href="pearsonpte.com">https://pearsonpte.com/</a>
               </p>
               <p>
-                <h1 className=" text-xl font-bold my-3">
+                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE ACADEMIC SYLLABUS
                 </h1>
                 <li>PTE Speaking</li>
@@ -120,7 +122,7 @@ const Page = () => {
                 <li>PTE Listening</li>
               </p>
               <p>
-                <h1 className=" text-xl font-bold my-3">
+                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE Speaking and PTE Writing (54-67 min):
                 </h1>
                 <li>Personal Introduction (30 sec)</li>
@@ -134,7 +136,7 @@ const Page = () => {
               </p>{" "}
               <p>
                 {" "}
-                <h1 className=" text-xl font-bold my-3">
+                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE Reading (29-30min minutes):
                 </h1>
                 <li>Fill in the blanks R&W (5-6)</li>
@@ -145,7 +147,7 @@ const Page = () => {
               </p>
               <p>
                 {" "}
-                <h1 className=" text-xl font-bold my-3">
+                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE Listening (30-43min):
                 </h1>
                 <p>The listening section consists of the following:</p>
@@ -161,7 +163,7 @@ const Page = () => {
                 </ol>
               </p>
               <p>
-                <h1 className=" text-xl font-bold my-3">
+                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                   HOW TO CHECK PTE RESULT?
                 </h1>
                 <p>
