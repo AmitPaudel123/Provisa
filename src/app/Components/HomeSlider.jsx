@@ -92,7 +92,6 @@ const HomeSlider = () => {
           <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
             <div className=" px-[15px] lg:px-[32rem] py-[24rem] ">
               <p className=" text-white text-center hover:animate-bounce bg-black bg-opacity-70 px-1 border-white border-[2px] w-fit py-3 text-2xl font-semibold ">
-                WE CAN HELP YOU LIVE THE <br /> LIFE YOU HAVE BEEN DREAMING OF
                 We can help you live the life you have been dreaming of
               </p>
             </div>
