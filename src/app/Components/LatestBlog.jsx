@@ -43,7 +43,7 @@ const LatestBlog = () => {
             Blogs that are loved by the community.
           </p>
         </div>
-        <Link href="/" className=" text-blue-600 float-right">
+        <Link href="/blog" className=" text-blue-600 float-right">
           View All
         </Link>
         <div className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -83,7 +83,7 @@ const LatestBlog = () => {
                   </div>
                 </div>
                 <div className="pt-3 ml-4 mr-2 mb-3">
-                  <h3 className="text-xl text-[#2d1d54] font-semibold hover:text-[#f4310a]">
+                  <h3 className="text-xl text-[#2d1d54] font-semibold hover:text-[#f4310a] opacity-80">
                     {items.title}
                   </h3>
                   <p className="text text-sm mt-1">{items.desc}</p>

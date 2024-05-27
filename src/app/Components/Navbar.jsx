@@ -262,10 +262,10 @@ const Navbar = () => {
             </div>
           )}
         </Link>
-        <div className=" flex items-center gap-1 pb-4 cursor-pointer">
+        <Link href="/blog" className=" flex items-center gap-1 pb-4">
           {" "}
           Blogs
-        </div>
+        </Link>
         <Link href="/faq">{"FAQ's"}</Link>
         <Link className="pb-4" href="/contact">
           Contact Us
@@ -613,7 +613,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div
+        <Link
+          href="/blog"
           className=" flex items-center gap-1  cursor-pointer"
           onClick={() => {
             setDisplayMenu(false);
@@ -621,7 +622,7 @@ const Navbar = () => {
         >
           {" "}
           Blogs
-        </div>
+        </Link>
         <Link
           href="/faq"
           onClick={() => {
