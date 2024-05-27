@@ -25,12 +25,12 @@ const FloatingActionButton = () => {
               rel="noopener noreferrer"
               className="mb-3 transform transition-transform duration-300"
             >
-              <Link
-                href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F397986083654488%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0"
-                className="bg-blue-500 text-white p-3 rounded-full shadow-lg transform hover:scale-110 z-[99999]"
-              >
-                <FaFacebookMessenger size={20} />
-              </Link>
+              <div className="bg-blue-500 text-white p-3 rounded-full shadow-lg transform hover:scale-110 z-[99999]">
+                <Link href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F397986083654488%2F%3Fmessaging_source%3Dsource%253Apages%253Amessage_shortlink%26source_id%3D1441792%26recurring_notification%3D0">
+                  {" "}
+                  <FaFacebookMessenger size={20} />
+                </Link>{" "}
+              </div>
             </a>
             <a
               href="https://wa.me/yourwhatsappnumber"
