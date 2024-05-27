@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className=" text">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={`About Us`} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-[4rem]">
+      <div className=" flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-12 my-[7rem]">
         <div className=" w-[90%] mx-auto lg:mx-0 md:w-[20%]">
           <ContactCard />
         </div>

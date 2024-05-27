@@ -80,7 +80,7 @@ const AssistCard = () => {
                 <div className="py-5 px-4 border-t text-right">
                   <Link
                     href={item.link}
-                    className="text-indigo-500 hover:text-indigo-500 text-sm font-medium"
+                    className="text-slate-800 hover:text-indigo-500 text-sm font-medium"
                   >
                     Learn more
                   </Link>

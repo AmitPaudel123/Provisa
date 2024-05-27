@@ -13,11 +13,11 @@ const Form = () => {
         imgsrc={`/appointmentimg.webp`}
         topic={`Books for Counseling`}
       />
-      <div className="lg:mx-auto mx-2 py-3 w-full lg:w-[50%]">
+      <div className="lg:mx-auto mx-2 my-[4rem] py-3 w-full lg:w-[50%]">
         <Appointmentform />
       </div>
 
-      <div className="my-10">
+      <div className="my-[4rem]">
         <div className="bg-gray-100">
           {/* Full-screen section with fixed background image */}
           <div
@@ -41,7 +41,7 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <div className="my-10">
+      <div className="my-[4rem]">
         <Location />
       </div>
     </>

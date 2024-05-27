@@ -6,16 +6,16 @@ const page = () => {
   return (
     <div className="text">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={"Message From M.D"} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 gap-2 my-[4rem] clear-start text-slate-700">
+      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 gap-10 my-[7rem] clear-start text-slate-700">
         <div className="w-[90%] mx-auto lg:mx-0 lg:w-[20%]">
           <ContactCard />
         </div>
-        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[45%]">
+        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[50%]">
           <div className=" flex flex-col my-3">
             <p className=" text-[#2d1d54] font-bold text-2xl">Who We Are </p>
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
           </div>
-          <div className=" my-2 flex flex-col lg:flex-row gap-2 ">
+          <div className=" my-2 flex flex-col lg:flex-row gap-5 ">
             <div>
               <Image
                 src="/mdimg.jpg"
@@ -46,6 +46,7 @@ const page = () => {
               sporting pursuits, travel and sightseeing, and much more as a
               result of studying abroad.
             </p>
+            <br />
           </div>
           <p>
             We organize educational and other informational events in
@@ -54,7 +55,7 @@ const page = () => {
             representative of universities/colleges and as a guardian of
             students in a foreign country., assists students who require
             documentation.
-            <br />
+            <br /> <br />
             We follow our own instincts to provide the best educational
             institute abroad for Nepalese students in every aspect of study
             abroad. Due to the fact that educational institutions are not easily

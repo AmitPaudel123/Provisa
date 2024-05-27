@@ -17,10 +17,10 @@ const Page = () => {
         imgsrc={"/contactbanner.webp"}
         topic={"Books For Counseling"}
       />
-      <div className="lg:mx-auto mx-2 py-3 w-full lg:w-[50%]">
+      <div className="lg:mx-auto mx-2 py-3 my-[4rem] w-full lg:w-[50%]">
         <Form />
       </div>
-      <div className="my-8">
+      <div className="my-[4rem]">
         <div className="bg-gray-100">
           {/* Full-screen section with fixed background image */}
           <div
@@ -88,7 +88,7 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className="my-8">
+      <div className="my-[4rem">
         <Location />
       </div>
     </div>

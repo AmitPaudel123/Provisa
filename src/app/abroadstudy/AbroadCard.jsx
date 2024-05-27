@@ -18,7 +18,7 @@ const AbroadCard = ({
   return (
     <div className=" mt-[12rem] text">
       <ImageCard topic={topic} imgsrc={imgsrc} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-4  ">
+      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-[7rem]  ">
         <div
           className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%] lg:h-[80rem] lg:overflow-y-scroll"
           style={{

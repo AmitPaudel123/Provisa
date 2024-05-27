@@ -329,9 +329,14 @@ const Navbar = () => {
       </div>
       {/* link section  */}
       <div
-        className={` flex flex-col lg:hidden fixed gap-4 w-[70%] md:w-[40%] h-screen bg-white top-0 left-0 z-10 py-5 pr-2b text-lg pl-4 transform transition-transform duration-300 ease-in-out shadow-sm shadow-black ${
+        className={` flex flex-col lg:hidden fixed gap-4 w-[70%] md:w-[40%] h-screen overflow-y-scroll bg-white top-0 left-0 z-10 py-5 pr-2b text-lg pl-4 transform transition-transform duration-300 ease-in-out shadow-sm shadow-black ${
           displayMenu ? "translate-x-0" : "-translate-x-full "
         }`}
+        style={{
+          scrollbarWidth: "none",
+          msOverflowStyle: "none",
+          WebkitOverflowScrolling: "touch",
+        }}
       >
         {/* close btn */}
         <button

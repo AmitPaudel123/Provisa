@@ -14,7 +14,7 @@ const ServiceCard = ({ topic, heading, desc, imgg }) => {
       ) : (
         ""
       )} */}
-      <div className=" flex flex-col lg:flex-row gap-3 lg:gap-12 lg:justify-center my-[6rem] text-slate-600">
+      <div className=" flex flex-col lg:flex-row gap-10 lg:gap-12 lg:justify-center my-[7rem] text-slate-600">
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%]">
           <div className=" flex flex-col mb-2">
             <p className=" text-[#2d1d54] font-semibold text-2xl">{heading} </p>
@@ -22,7 +22,7 @@ const ServiceCard = ({ topic, heading, desc, imgg }) => {
           </div>
           <p>{desc}</p>
         </div>
-        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[30%] flex flex-col gap-4">
+        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[30%] flex flex-col gap-10 lg:gap-4">
           <ServiceLinks />
           <Form />
         </div>
