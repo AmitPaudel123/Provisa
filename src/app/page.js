@@ -10,7 +10,7 @@ import Testimonials from "./Components/Testi";
 
 const page = () => {
   return (
-    <div className=" bg-white overflow-x-hidden">
+    <div className=" bg-white overflow-x-hidden mb-[7rem]">
       <HomeSlider />
       <Description />
       <AssistCard />
