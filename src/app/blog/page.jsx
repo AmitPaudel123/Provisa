@@ -7,7 +7,7 @@ import Recent_blog from "./Recent_blog";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-const page = () => {
+const Page = () => {
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -45,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
