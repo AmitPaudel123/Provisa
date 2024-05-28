@@ -19,7 +19,7 @@ const Appointmentform = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="max-w-5xl mx-auto p-8 bg-gray-100 shadow-md rounded-lg mt-[2rem] mb-3 z-20"
       >
-        <h2 className="text-xl font-bold mb-4 header-text">
+        <h2 className="text-xl font-semibold mb-4 header-text">
           Personal Information
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

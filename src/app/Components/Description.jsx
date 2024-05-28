@@ -1,19 +1,29 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useEffect } from "react";
 import { FaUniversity } from "react-icons/fa";
 import { BsGlobeAsiaAustralia } from "react-icons/bs";
 import { PiStudentBold } from "react-icons/pi";
 import { SiBookstack } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Description = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 200,
+      once: true, // Animation happens only once
+    });
+  }, []);
   return (
     <div className="">
       <div className="bg-white  text-center px-2 lg:px-[11rem] my-16">
         <h1 className="text-[#2d1d54]  font-semibold text-2xl mb-4">
           PROFESSIONAL VISA AND EDUCATION SERVICES
         </h1>
-        <p className="h-fit text mx-3 lg:mx-0">
+        <p className="h-fit text mx-3 lg:mx-0" data-aos="fade-up">
           {` Professional Visa and Education Services Pvt. Ltd. (Pro-Visa) is a
           professional visa and educational consultancy authorized by the
           Ministry of Education (MOE) and offering free education to students

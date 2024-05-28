@@ -2,7 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css";
 const LatestBlog = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 200,
+      once: true, // Animation happens only once
+    });
+  }, []);
   const posts = [
     {
       title: "8 Things to do While Wlanning to Study Abroad",
@@ -31,6 +41,7 @@ const LatestBlog = () => {
       href: "javascript:void(0)",
     },
   ];
+
   return (
     <div>
       <section className="gapping mx-auto px-4 max-w-screen-xl md:px-8 ">
@@ -46,7 +57,10 @@ const LatestBlog = () => {
         <Link href="/blog" className=" text-blue-600 float-right">
           View All
         </Link>
-        <div className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3"
+          data-aos="fade-up"
+        >
           {posts.map((items, key) => (
             <article
               className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"

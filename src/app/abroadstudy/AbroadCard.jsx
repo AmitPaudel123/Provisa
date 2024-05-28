@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import ImageCard from "../Components/ImageCard";
 import Abroadlink from "./Abroadlink";
 import Appointmentform from "../appointment/Appointmentform";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const AbroadCard = ({
   topic,
   imgsrc,
@@ -15,10 +18,20 @@ const AbroadCard = ({
   ug,
   pg,
 }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 200,
+      once: true, // Animation happens only once
+    });
+  }, []);
   return (
     <div className=" mt-[12rem] text">
       <ImageCard topic={topic} imgsrc={imgsrc} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-[7rem]  ">
+      <div
+        className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-[7rem] "
+        data-aos="fade-up"
+      >
         <div
           className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%] lg:h-[80rem] lg:overflow-y-scroll"
           style={{
@@ -136,7 +149,7 @@ const AbroadCard = ({
           </div>
         </div>
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[30%] flex flex-col gap-1">
-          <div>
+          <div data-aos="fade-up">
             <Abroadlink />
           </div>
           <div>
