@@ -8,6 +8,8 @@ import { PiStudentBold } from "react-icons/pi";
 import { SiBookstack } from "react-icons/si";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { IoMdArrowDown } from "react-icons/io";
+import { IoAirplane } from "react-icons/io5";
 
 const Description = () => {
   useEffect(() => {
