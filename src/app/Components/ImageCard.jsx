@@ -12,7 +12,7 @@ const ImageCard = ({ imgsrc, topic }) => {
           priority={true}
           className="object-cover absolute mix-blend-overlay"
         />
-        <div className=" pl-5 lg:pl-[12rem] pt-[13rem] text-white font-bold text-4xl">
+        <div className=" pl-5 lg:pl-[12rem] pt-[13rem] text-white font-semibold text-3xl">
           {topic}
         </div>
       </div>

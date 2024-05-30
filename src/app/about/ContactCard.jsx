@@ -3,7 +3,7 @@ import Link from "next/link";
 const ContactCard = () => {
   return (
     <div className=" bg-slate-100 p-4 rounded-md">
-      <h1 className=" font-semibold text-2xl mb-3">About Us</h1>
+      <h1 className=" font-semibold text-xl text-[#2d1d54] mb-3">About Us</h1>
       <div className=" flex flex-col gap-2">
         <Link href="/about" className=" text-effect">
           About Us

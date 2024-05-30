@@ -3,7 +3,9 @@ import Link from "next/link";
 const ServiceLinks = () => {
   return (
     <div className=" bg-slate-100 p-4 rounded-md">
-      <h1 className=" font-semibold text-2xl mb-3">Our Services</h1>
+      <h1 className=" font-semibold text-xl text-[#2d1d54] mb-3">
+        Our Services
+      </h1>
       <div className=" flex flex-col gap-2">
         <Link href="/services/briefing" className=" text-effect">
           Pre-departure Briefing

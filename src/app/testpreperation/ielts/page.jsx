@@ -53,7 +53,7 @@ const Page = () => {
           >
             <Image src="/ielts.webp" alt="IELTS" width={700} height={100} />
             <div>
-              <h1 className=" text-2xl font-semibold text-[#2d1d54] mt-4 mb-1">
+              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-4 mb-1">
                 Course Description
               </h1>
               <p>
@@ -69,7 +69,7 @@ const Page = () => {
                 test for Australian immigration, as well as the United Kingdom
                 and Canada.
               </p>
-              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+              <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                 TYPES OF IELTS TEST
               </h1>
               <ol className="  list-decimal list-inside">
@@ -91,7 +91,7 @@ const Page = () => {
                   </p>
                 </li>
               </ol>
-              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+              <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                 STRUCTURE OF IELTS TEST
               </h1>
               <p>
@@ -109,7 +109,7 @@ const Page = () => {
                 but the writing and reading sections differ slightly. <br />
                 An IELTS result is valid for 2 years.
               </p>
-              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+              <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                 IELTS BAND SCORES
               </h1>
               <p>

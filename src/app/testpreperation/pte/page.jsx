@@ -92,19 +92,15 @@ const Page = () => {
                   <li>Partial Credit</li>
                   <li>Correct or Incorrect</li>
                 </ul>
-                <p>
-                  <span className=" font-semibold text-lg">
-                    Partial Credit:
-                  </span>
+                <p className=" my-3">
+                  <span className=" font-semibold ">Partial Credit:</span>
                   For all correct answers, partial credit is given. All
                   incorrect answers will result in a deduction of points from
                   the points earned for correct answers. For incorrect answers,
                   no points are given.
                 </p>
                 <p>
-                  <span className=" font-semibold text-lg">
-                    Correct or Incorrect:
-                  </span>
+                  <span className=" font-semibold ">Correct or Incorrect:</span>
                   For each correct response, the candidate will receive one
                   point. An incorrect answer will not earn you any points.
                 </p>
@@ -113,8 +109,8 @@ const Page = () => {
                 <a href="pearsonpte.com">https://pearsonpte.com/</a>
               </p>
               <p>
-                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
-                  PTE ACADEMIC SYLLABUS
+                <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
+                  PTE Academic Syllabus
                 </h1>
                 <li>PTE Speaking</li>
                 <li>PTE Writing</li>
@@ -122,7 +118,7 @@ const Page = () => {
                 <li>PTE Listening</li>
               </p>
               <p>
-                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE Speaking and PTE Writing (54-67 min):
                 </h1>
                 <li>Personal Introduction (30 sec)</li>
@@ -136,7 +132,7 @@ const Page = () => {
               </p>{" "}
               <p>
                 {" "}
-                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE Reading (29-30min minutes):
                 </h1>
                 <li>Fill in the blanks R&W (5-6)</li>
@@ -147,7 +143,7 @@ const Page = () => {
               </p>
               <p>
                 {" "}
-                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                   PTE Listening (30-43min):
                 </h1>
                 <p>The listening section consists of the following:</p>
@@ -163,8 +159,8 @@ const Page = () => {
                 </ol>
               </p>
               <p>
-                <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
-                  HOW TO CHECK PTE RESULT?
+                <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
+                  HOW To Check PTE Result?
                 </h1>
                 <p>
                   Within 5 business days of the test date, the PTE results will

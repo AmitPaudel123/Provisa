@@ -35,7 +35,7 @@ const LatestBlog = () => {
       <section className="gapping mx-auto ">
         <div>
           <div className="flex">
-            <p className="text-[#2d1d54] font-bold text-2xl mt-2">
+            <p className="text-[#2d1d54] font-bold text-xl mt-2">
               Recent Blogs
             </p>
           </div>

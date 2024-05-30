@@ -12,7 +12,7 @@ const page = () => {
         </div>
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[45%]">
           <div className=" flex flex-col mb-3">
-            <p className=" text-[#2d1d54] font-bold text-2xl ">Who We Are </p>
+            <p className=" text-[#2d1d54] font-bold text-xl ">Who We Are </p>
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
           </div>
           <p>
@@ -47,7 +47,7 @@ const page = () => {
           />
           <div>
             <br />
-            <h1 className=" font-bold text-2xl text-[#2d1d54] my-2">
+            <h1 className=" font-bold text-lg text-[#2d1d54] my-2">
               Our Mission
             </h1>
             <p>
@@ -68,7 +68,7 @@ const page = () => {
           </div>
           <div>
             <br />
-            <h1 className=" font-bold text-2xl text-[#2d1d54] my-2">
+            <h1 className=" font-bold text-lg text-[#2d1d54] my-2">
               Our Vision
             </h1>
             <p>

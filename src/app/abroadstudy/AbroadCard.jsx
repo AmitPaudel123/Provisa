@@ -22,7 +22,7 @@ const AbroadCard = ({
     AOS.init({
       duration: 1200,
       offset: 200,
-      once: true, // Animation happens only once
+      once: true,
     });
   }, []);
   return (
@@ -30,7 +30,7 @@ const AbroadCard = ({
       <ImageCard topic={topic} imgsrc={imgsrc} />
       <div
         className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-[7rem] "
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <div
           className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%] lg:h-[80rem] lg:overflow-y-scroll"
@@ -57,9 +57,7 @@ const AbroadCard = ({
               WebkitOverflowScrolling: "touch",
             }}
           >
-            <p className=" text-[#2d1d54] text-2xl font-semibold mt-2">
-              {topic}
-            </p>
+            <p className=" text-[#2d1d54] text-xl font-bold mt-2">{topic}</p>
             <ul className="list-disc list-inside pl-5 py-3">
               {descLists && descLists.length > 0
                 ? descLists.map((data, index) => (
@@ -71,7 +69,7 @@ const AbroadCard = ({
             </ul>
             <p>{description}</p>
             <div className="py-3">
-              <p className=" text-[#2d1d54] text-2xl font-semibold mt-2">
+              <p className=" text-[#2d1d54] text-lg font-semibold mt-2">
                 Education System
               </p>
               {eduSystem && eduSystem.length > 0
@@ -86,7 +84,9 @@ const AbroadCard = ({
             <div>
               {ug && ug.length > 0 ? (
                 <div>
-                  <p className=" text-xl font-semibold">Undergraduate Degree</p>
+                  <p className=" text-lg text-[#2d1d54] font-semibold">
+                    Undergraduate Degree
+                  </p>
                   <p>{ug}</p>
                 </div>
               ) : (
@@ -96,7 +96,9 @@ const AbroadCard = ({
             <div>
               {pg && pg.length > 0 ? (
                 <div className=" my-3">
-                  <p className=" text-xl font-semibold">PostGradute Degree</p>
+                  <p className=" text-lg text-[#2d1d54] font-semibold">
+                    PostGradute Degree
+                  </p>
                   <p>{pg}</p>
                 </div>
               ) : (
@@ -106,7 +108,7 @@ const AbroadCard = ({
 
             <div className="mt-8">
               {qualifications && qualifications.length > 0 ? (
-                <p className=" text-[#2d1d54] text-2xl font-semibold my-2">
+                <p className=" text-[#2d1d54] text-lg font-semibold my-2">
                   Qualification & Requirement to Study in Australia for Nepali
                   Students
                 </p>
@@ -117,9 +119,7 @@ const AbroadCard = ({
                 ? qualifications.map((qualification, index) => {
                     return (
                       <div key={index} className="mb-6">
-                        <h3 className=" font-bold text-xl">
-                          {qualification.topic}
-                        </h3>
+                        <h3 className=" font-bold">{qualification.topic}</h3>
                         <ul>
                           {qualification.lines.map((line, idx) => {
                             return <li key={idx}>{line}</li>; // Return the JSX element here
@@ -132,7 +132,7 @@ const AbroadCard = ({
             </div>
             <div className="py-3">
               {livingCost && livingCost.length > 0 ? (
-                <p className=" text-[#2d1d54] text-2xl font-semibold mt-2">
+                <p className=" text-[#2d1d54] text-lg font-semibold mt-2">
                   Cost of Living
                 </p>
               ) : (
@@ -149,7 +149,7 @@ const AbroadCard = ({
           </div>
         </div>
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[30%] flex flex-col gap-1">
-          <div data-aos="fade-up">
+          <div>
             <Abroadlink />
           </div>
           <div>

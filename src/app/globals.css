@@ -10,7 +10,7 @@
     @apply scale-125;
   }
   .text {
-    @apply text-slate-700;
+    @apply text-gray-950;
   }
   .header-text {
     @apply text-slate-900;

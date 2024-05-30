@@ -59,11 +59,11 @@ const Page = () => {
               className="  lg:w-[90%] h-[40rem]"
             />
             <div>
-              <h1 className=" text-2xl font-semibold text-[#2d1d54] mt-8 mb-1">
+              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                 Course Description
               </h1>
               <p>
-                <p className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+                <p className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                   NAT
                 </p>
                 Nihongo Ability Test is the full form of NAT. It means that it
@@ -80,7 +80,7 @@ const Page = () => {
                 Language Knowledge (grammar, reading comprehension), and
                 Listening are the sections of the exam at levels 3, 4, and 5.
               </p>
-              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+              <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                 JLPT
               </h1>
               <p>
@@ -102,7 +102,7 @@ const Page = () => {
                 Japanese used in a broad range of actual everyday scenes. N3
                 bridges the gap between N4/N5 and N1/N2.
               </p>
-              <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
+              <h1 className=" text-lg font-semibold text-[#2d1d54] mt-8 mb-1">
                 TOP-J
               </h1>
               <p>

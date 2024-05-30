@@ -12,7 +12,7 @@ const page = () => {
         </div>
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[50%]">
           <div className=" flex flex-col my-3">
-            <p className=" text-[#2d1d54] font-bold text-2xl">Who We Are </p>
+            <p className=" text-[#2d1d54] font-bold text-xl">Who We Are </p>
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>
           </div>
           <div className=" my-2 flex flex-col lg:flex-row gap-5 ">
@@ -26,29 +26,29 @@ const page = () => {
               />
               <p className=" text-xl">M.D Bashu Nepal</p>
             </div>
-            <p className=" lg:w-[70%]">
-              <span className=" text-lg font-semibold">PROVISA</span> is
-              dedicated to meeting the needs of students seeking to study
-              abroad, with a team of enthusiastic and dedicated human resources
-              and excellent services. It has all set a record by recruiting a
-              large number of Nepalese students to study abroad in just ten
-              years. We believe we have added a brick to the nation’s strength
-              by helping to realize so many dreams. To achieve our goal of
-              providing better opportunities for Nepalese students, we are
-              utilizing all available resources both inside and outside the
-              country. When it comes to planning an international study, keep
-              your personal goals in mind as you consider important factors such
-              as course availability, entry requirements, projected outcomes,
-              costs, course duration, academic content, and employment options
-              during the program. You will gain skills and qualifications that
-              will benefit your future professional career as well as other
+            <p className=" lg:w-[70%] text">
+              <span className="  font-semibold">PROVISA</span> is dedicated to
+              meeting the needs of students seeking to study abroad, with a team
+              of enthusiastic and dedicated human resources and excellent
+              services. It has all set a record by recruiting a large number of
+              Nepalese students to study abroad in just ten years. We believe we
+              have added a brick to the nation’s strength by helping to realize
+              so many dreams. To achieve our goal of providing better
+              opportunities for Nepalese students, we are utilizing all
+              available resources both inside and outside the country. When it
+              comes to planning an international study, keep your personal goals
+              in mind as you consider important factors such as course
+              availability, entry requirements, projected outcomes, costs,
+              course duration, academic content, and employment options during
+              the program. You will gain skills and qualifications that will
+              benefit your future professional career as well as other
               intangible assets such as cultural experience, new contacts,
               sporting pursuits, travel and sightseeing, and much more as a
               result of studying abroad.
             </p>
             <br />
           </div>
-          <p>
+          <p className="text">
             We organize educational and other informational events in
             collaboration with the government, universities, and embassies of
             various countries, as well as the Nepal Government, work as a

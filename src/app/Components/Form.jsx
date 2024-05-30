@@ -49,7 +49,7 @@ const Form = () => {
 
   return (
     <div className="bg-gray-100 p-4 rounded-md h-full text">
-      <h2 className="text-2xl  text-[#2d1d54] font-semibold mb-4">
+      <h2 className="text-xl  text-[#2d1d54] font-semibold mb-4">
         For Your Inquiries
       </h2>
       <form onSubmit={handleSubmit} className="max-w-md mx-auto">
