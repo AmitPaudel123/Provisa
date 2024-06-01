@@ -25,7 +25,7 @@ const page = () => {
       <Testimonials />
       <FormSection />
       <LatestBlog />
-      <div className=" my-[2rem]">
+      <div className=" pt-[3rem]">
         <Universities />
       </div>{" "}
     </div>

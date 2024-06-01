@@ -15,7 +15,7 @@ const FormSection = () => {
     });
   }, []);
   return (
-    <div className=" flex flex-col lg:flex-row w-full justify-center gap-10 lg:gap-8 gapping">
+    <div className=" flex flex-col lg:flex-row w-full justify-center gap-10 lg:gap-8 gapping pt-[4rem]">
       <div data-aos="fade-down" className="w-full lg:w-[40%]">
         <Image
           src="/formbanner.webp"

@@ -29,7 +29,7 @@ const AbroadCard = ({
     <div className=" mt-[12rem] text">
       <ImageCard topic={topic} imgsrc={imgsrc} />
       <div
-        className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 my-[7rem] "
+        className=" flex flex-col lg:flex-row lg:justify-center gap-6 lg:gap-12 pt-[3rem] "
         // data-aos="fade-up"
       >
         <div

@@ -4,13 +4,13 @@ import ContactCard from "./ContactCard";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className=" text">
+    <div className=" text ">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={`About Us`} />
-      <div className=" flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-12 my-[7rem]">
+      <div className=" flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-12 pt-[5rem]">
         <div className=" w-[90%] mx-auto lg:mx-0 md:w-[20%]">
           <ContactCard />
         </div>
-        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[45%]">
+        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[45%] ">
           <div className=" flex flex-col mb-3">
             <p className=" text-[#2d1d54] font-bold text-xl ">Who We Are </p>
             <p className=" h-[0.3rem] bg-[#cf2e2e] w-14"></p>

@@ -108,11 +108,11 @@ const Faq = () => {
     <>
       <ImageCard imgsrc={"/faqimg.webp"} topic={`FAQ'S`} />
 
-      <div className="flex flex-col lg:flex-row justify-center gap-10 mt-[2rem] py-6 px-6">
+      <div className="flex flex-col lg:flex-row justify-center gap-12 pt-[3rem] py-6 px-6">
         <div className=" lg:w-[50%] lg:-mt-5">
           <FaqPage />
         </div>
-        <div className=" flex flex-col gap-8 lg:gap-4  lg:w-[25%]">
+        <div className=" flex flex-col gap-12 lg:gap-4  lg:w-[25%]">
           <ContactCard />
           <Form />
         </div>

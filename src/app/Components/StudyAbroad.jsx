@@ -134,7 +134,7 @@ const ImageGrid = () => {
 
 const StudyAbroad = () => {
   return (
-    <div className="gapping">
+    <div className="gapping pt-[3rem]">
       <div className="flex flex-col items-center mb-8">
         <p className="text-[#2d1d54] font-bold text-2xl">Study Abroad</p>
         <p className="h-[0.3rem] bg-[#cf2e2e] w-14"></p>

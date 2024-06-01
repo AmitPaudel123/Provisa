@@ -19,9 +19,9 @@ const Footer = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mt-[10rem]">
       <footer className="text-slate-300 bg-slate-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ml-3 lg:ml-0">
           <div className="flex flex-col gap-2 lg:gap-1 lg:flex-row md:justify-between">
             <div className="mb-6 md:mb-0" data-aos="fade-up">
               <p className="flex flex-col">
@@ -45,7 +45,7 @@ const Footer = () => {
               data-aos="fade-up"
             >
               <div>
-                <h2 className="mb-4 text-2xl font-semibold opacity-90">
+                <h2 className="mt-4 lg:mt-0 mb-4 text-2xl font-semibold opacity-90">
                   Quick Links
                 </h2>
                 <ul className="font-medium flex flex-col gap-2">
@@ -82,7 +82,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-4 text-2xl font-semibold opacity-90">
+                <h2 className="mt-4 lg:mt-0 mb-4 text-2xl font-semibold opacity-90">
                   Test Preparation
                 </h2>
                 <ul className="font-medium flex flex-col gap-2">
@@ -107,7 +107,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-4 text-2xl font-semibold opacity-90">
+                <h2 className="mt-4 lg:mt-0 mb-4 text-2xl font-semibold opacity-90">
                   Contact Us
                 </h2>
                 <div className="flex flex-col gap-3 opacity-90 footer-txt">

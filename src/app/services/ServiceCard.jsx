@@ -14,7 +14,7 @@ const ServiceCard = ({ topic, heading, desc, imgg }) => {
       ) : (
         ""
       )} */}
-      <div className=" flex flex-col lg:flex-row gap-10 lg:gap-12 lg:justify-center my-[7rem] text">
+      <div className=" flex flex-col lg:flex-row gap-10 lg:gap-12 lg:justify-center pt-[3rem] text">
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%]">
           <div className=" flex flex-col mb-2">
             <p className=" text-[#2d1d54] font-semibold text-xl">{heading} </p>

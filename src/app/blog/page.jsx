@@ -19,7 +19,7 @@ const Page = () => {
     <>
       <ImageCard imgsrc="/blog1.png" topic="Blogs" />
       <div
-        className=" flex flex-col lg:flex-row lg:justify-center my-[7rem] lg:gap-12 lg:h-[98rem] overflow-y-scroll"
+        className=" flex flex-col lg:flex-row lg:justify-center my-[7rem] gap-8 lg:gap-12 lg:h-[98rem] overflow-y-scroll"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
@@ -33,7 +33,10 @@ const Page = () => {
           {" "}
           <Blogs />
         </div>{" "}
-        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[30%]" data-aos="fade-up">
+        <div
+          className=" w-[90%]  mx-auto lg:mx-0 lg:w-[30%]"
+          data-aos="fade-up"
+        >
           <Recent_blog />
           <div className=" mt-[-2rem]">
             {" "}

@@ -50,7 +50,7 @@ const integrations = [
 
 const AssistCard = () => {
   return (
-    <section className="gapping bg-white">
+    <section className="gapping bg-white pt-[4rem]">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className=" flex flex-col items-center">
           <p className=" text-[#2d1d54] font-bold text-2xl">
