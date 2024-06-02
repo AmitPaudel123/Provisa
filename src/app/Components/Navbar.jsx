@@ -369,7 +369,7 @@ const Navbar = () => {
             onClick={() => setDisplayAbout(!displayAbout)}
           >
             <p>About us</p>{" "}
-            <div className=" side_nav_link-btn">
+            <div className=" ">
               <IoIosArrowDown />
             </div>
           </div>
@@ -442,7 +442,7 @@ const Navbar = () => {
             onClick={() => setDisplayServices(!displayServices)}
           >
             <p>Our services</p>{" "}
-            <div className="side_nav_link-btn">
+            <div className="">
               <IoIosArrowDown />
             </div>
           </div>
@@ -506,7 +506,7 @@ const Navbar = () => {
             onClick={() => setdisplayAbroadStd(!displayAbroadStd)}
           >
             <p>Abroad Study</p>{" "}
-            <div className=" side_nav_link-btn">
+            <div className=" ">
               <IoIosArrowDown />
             </div>
           </div>
@@ -572,7 +572,7 @@ const Navbar = () => {
             onClick={() => setDisplayPreparation(!displayPreparation)}
           >
             <p>Test Preparation</p>{" "}
-            <div className="side_nav_link-btn">
+            <div className="">
               <IoIosArrowDown />
             </div>{" "}
           </div>

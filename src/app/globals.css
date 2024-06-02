@@ -37,12 +37,6 @@
   .side_nav_link {
     @apply flex gap-2 justify-between items-center pr-7 cursor-pointer;
   }
-  .side_nav_link-btn {
-    @apply bg-slate-500  text-white p-1 rounded-md;
-  }
-  .side_nav_link-btn:hover {
-    @apply hover:bg-slate-400;
-  }
 }
 
 :root {
