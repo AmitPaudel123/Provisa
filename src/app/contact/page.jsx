@@ -1,10 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Form from "../Components/Form";
 import Location from "../Components/Location";
-import { RiMailOpenFill } from "react-icons/ri";
-import { MdLocationPin } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import ImageCard from "../Components/ImageCard";
 

@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AOS from "aos";
+import { IoPerson } from "react-icons/io5";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 const LatestBlog = () => {
@@ -79,23 +80,18 @@ const LatestBlog = () => {
                   <div class="absolute inset-0 bg-[#f4310aa8] opacity-0 hover:opacity-65 transition-opacity duration-300 rounded-t-md"></div>
                 </div>
 
-                <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
-                  <div className="flex-none w-10 h-10 rounded-full">
-                    <Image
-                      src={items.authorLogo}
-                      className="w-full h-full rounded-full"
-                      alt={items.authorName}
-                    />
-                  </div>
-                  <div className="ml-3">
-                    <span className="block text-header font-semibold">
+                <div className="flex  justify-between mt-2 pt-3 ml-4 mr-2">
+                  <div className=" text-gray-500 flex gap-2 items-center">
+                    <IoPerson />
+                    <p className="block text-header font-semibold ">
                       {items.authorName}
-                    </span>
-                    <span className="block text-gray-500 text-sm">
-                      {items.date}
-                    </span>
+                    </p>
+                  </div>
+                  <div className="block text-gray-500 text-sm">
+                    {items.date}
                   </div>
                 </div>
+
                 <div className="pt-3 ml-4 mr-2 mb-3">
                   <h3 className="text-xl text-[#2d1d54] font-semibold hover:text-[#f4310a] opacity-80">
                     {items.title}
