@@ -20,7 +20,10 @@ export default function RootLayout({ children }) {
         <GoTop />
         <Navbar />
         {children}
-        <Footer />
+        <div className=" mt-[10rem]">
+          {" "}
+          <Footer />
+        </div>
       </body>
     </html>
   );

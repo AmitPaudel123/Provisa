@@ -121,13 +121,13 @@ const Navbar = () => {
 
       {/* link section */}
       <div className="lg:w-[80%]  mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 py-1 z-[999999]">
-        <Link href="/" className="pb-4 cursor-pointer">
+        <Link href="/" className="pb-4 cursor-pointer text-black">
           Home
         </Link>
         <Link
           href="/about"
           div
-          className=" flex items-center gap-1 relative pb-4 cursor-pointer"
+          className=" flex items-center gap-1 relative pb-4 cursor-pointer text-black"
           onMouseOver={() => {
             setShowAbout(true);
           }}
@@ -164,7 +164,7 @@ const Navbar = () => {
         </Link>
         <Link
           href={"/services"}
-          className=" flex items-center gap-1 pb-4 cursor-pointer"
+          className=" flex items-center gap-1 pb-4 cursor-pointer text-black"
           onMouseOver={() => {
             setShowServices(true);
           }}
@@ -196,7 +196,7 @@ const Navbar = () => {
         </Link>
         <Link
           href="/abroadstudy/"
-          className=" flex items-center gap-1 pb-4 cursor-pointer"
+          className=" flex items-center gap-1 pb-4 cursor-pointer text-black"
           onMouseOver={() => {
             setShowAbroadStd(true);
           }}
@@ -231,7 +231,7 @@ const Navbar = () => {
         </Link>
         <Link
           href="/testpreperation"
-          className=" flex items-center gap-1 pb-4 cursor-pointer"
+          className=" flex items-center gap-1 pb-4 cursor-pointer text-black"
           onMouseOver={() => {
             setShowPreparation(true);
           }}
@@ -262,12 +262,15 @@ const Navbar = () => {
             </div>
           )}
         </Link>
-        <Link href="/blog" className=" flex items-center gap-1 pb-4">
+        <Link href="/blog" className=" flex items-center gap-1 pb-4 text-black">
           {" "}
           Blogs
         </Link>
-        <Link href="/faq">{"FAQ's"}</Link>
-        <Link className="pb-4" href="/contact">
+        <Link href="/faq" className=" text-black">
+          {" "}
+          {"FAQ's"}
+        </Link>
+        <Link className="pb-4 text-black" href="/contact">
           Contact Us
         </Link>
       </div>
@@ -616,7 +619,7 @@ const Navbar = () => {
         </div>
         <Link
           href="/blog"
-          className=" flex items-center gap-1  cursor-pointer"
+          className=" flex items-center gap-1  cursor-pointer text-black"
           onClick={() => {
             setDisplayMenu(false);
           }}
@@ -651,7 +654,7 @@ const Navbar = () => {
               setDisplayMenu(false);
             }}
           >
-            <FaFacebookF />{" "}
+            <FaFacebookF className=" text-black" />{" "}
           </a>
 
           <a
@@ -661,7 +664,7 @@ const Navbar = () => {
               setDisplayMenu(false);
             }}
           >
-            <FaTwitter />{" "}
+            <FaTwitter className=" text-black" />{" "}
           </a>
           <a
             href="https://www.instagram.com/PROVISANEPAL/"
@@ -670,7 +673,7 @@ const Navbar = () => {
               setDisplayMenu(false);
             }}
           >
-            <FaInstagram />{" "}
+            <FaInstagram className=" text-black" />{" "}
           </a>
           <a
             href="https://www.youtube.com/"
@@ -680,7 +683,7 @@ const Navbar = () => {
             }}
           >
             {" "}
-            <FaYoutube />
+            <FaYoutube className=" text-black" />
           </a>
         </div>
       </div>

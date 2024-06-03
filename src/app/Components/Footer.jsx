@@ -19,7 +19,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="mt-[10rem]">
+    <div>
       <footer className="text-slate-300 bg-slate-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ml-3 lg:ml-0">
           <div className="flex flex-col gap-2 lg:gap-1 lg:flex-row md:justify-between">
