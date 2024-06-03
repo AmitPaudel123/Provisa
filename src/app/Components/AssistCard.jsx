@@ -63,7 +63,7 @@ const AssistCard = () => {
             return (
               <Link
                 href={item.link}
-                className="b bg-gray-100 rounded-xl hover:duration-500 hover:shadow-slate-400 shadow-sm p-4  relative hover:bg-[#f4310a] hover:text-white group"
+                className="b bg-slate-100 rounded-xl hover:duration-500 hover:shadow-slate-400 shadow-sm p-4  relative hover:bg-[#f4310a] hover:text-white group"
                 key={idx}
               >
                 <div className="flex items-start justify-between p-4">
@@ -75,7 +75,7 @@ const AssistCard = () => {
                     <h4 className="text-[#2d1d54] group-hover:text-white text-xl font-semibold pb-3">
                       {item.title}
                     </h4>
-                    <p className=" mt-5 group-hover:text-gray-200">
+                    <p className=" text-black mt-5 group-hover:text-gray-200">
                       {item.desc}
                     </p>
                   </div>

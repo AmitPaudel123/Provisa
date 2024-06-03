@@ -360,12 +360,13 @@ const Navbar = () => {
           onClick={() => {
             setDisplayMenu(false);
           }}
+          className=" text-black"
         >
           Home
         </Link>
         <div>
           <div
-            className="side_nav_link"
+            className="side_nav_link text-black"
             onClick={() => setDisplayAbout(!displayAbout)}
           >
             <p>About us</p>{" "}
@@ -438,7 +439,7 @@ const Navbar = () => {
 
         <div>
           <div
-            className="side_nav_link"
+            className="side_nav_link text-black"
             onClick={() => setDisplayServices(!displayServices)}
           >
             <p>Our services</p>{" "}
@@ -502,7 +503,7 @@ const Navbar = () => {
 
         <div>
           <div
-            className="side_nav_link"
+            className="side_nav_link text-black"
             onClick={() => setdisplayAbroadStd(!displayAbroadStd)}
           >
             <p>Abroad Study</p>{" "}
@@ -568,7 +569,7 @@ const Navbar = () => {
 
         <div>
           <div
-            className="side_nav_link"
+            className="side_nav_link text-black"
             onClick={() => setDisplayPreparation(!displayPreparation)}
           >
             <p>Test Preparation</p>{" "}
@@ -628,12 +629,13 @@ const Navbar = () => {
           onClick={() => {
             setDisplayMenu(false);
           }}
+          className=" text-black"
         >
           {"FAQ's"}
         </Link>
         <Link
           href="/contact"
-          className="pb-4 cursor-pointer"
+          className="pb-4 cursor-pointer text-black"
           onClick={() => {
             setDisplayMenu(false);
           }}
