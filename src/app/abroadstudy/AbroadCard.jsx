@@ -26,20 +26,13 @@ const AbroadCard = ({
     });
   }, []);
   return (
-    <div className=" mt-[12rem] text bg-color">
+    <div className=" mt-[12rem] text">
       <ImageCard topic={topic} imgsrc={imgsrc} />
       <div
         className=" flex flex-col lg:flex-row lg:justify-center gap-6 lg:gap-12 pt-[3rem] "
         // data-aos="fade-up"
       >
-        <div
-          className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%] lg:h-[80rem] lg:overflow-y-scroll"
-          style={{
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-            WebkitOverflowScrolling: "touch",
-          }}
-        >
+        <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[40%]">
           <div>
             <Image
               src={bannerimg}

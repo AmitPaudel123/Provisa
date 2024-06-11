@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import GoTop from "./Components/GoTop";
 import FloatingActionButton from "./Components/FloatingActionButton";
+import TopNav from "./Components/TopNav";
+import NavLink from "./Components/NavLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +20,9 @@ export default function RootLayout({ children }) {
       <body className={` bg-color ${inter.className} overflow-x-hidden`}>
         <FloatingActionButton />
         <GoTop />
-        <Navbar />
+        {/* <Navbar /> */}
+        <TopNav />
+        <NavLink />
         {children}
         <div className=" pt-[10rem] bg-color">
           {" "}

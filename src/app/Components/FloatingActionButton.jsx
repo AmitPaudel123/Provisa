@@ -33,7 +33,7 @@ const FloatingActionButton = () => {
               </div>
             </a>
             <a
-              href="https://wa.me/yourwhatsappnumber"
+              href="https://api.whatsapp.com/send/?phone=9779851101782"
               target="_blank"
               rel="noopener noreferrer"
               className="mb-3 transform transition-transform duration-300"

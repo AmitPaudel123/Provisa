@@ -44,9 +44,9 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden">
+    <div className=" overflow-hidden">
       <Slider {...settings}>
-        <div className="relative h-screen w-screen bg-cover ">
+        <div className="relative h-screen w-screen  overflow-hidden">
           <Image
             src="/sliderimg1.webp"
             alt="slider"

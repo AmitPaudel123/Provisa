@@ -10,14 +10,7 @@ import Testimonials from "./Components/Testi";
 
 const page = () => {
   return (
-    <div
-      className=" bg-color overflow-x-hidden mb-[7rem]"
-      style={{
-        scrollbarWidth: "none",
-        msOverflowStyle: "none",
-        WebkitOverflowScrolling: "touch",
-      }}
-    >
+    <div className=" bg-color mb-[7rem]">
       <HomeSlider />
       <Description />
       <AssistCard />

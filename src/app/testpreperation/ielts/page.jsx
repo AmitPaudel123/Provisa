@@ -41,16 +41,8 @@ const Page = () => {
     <div className="scroll-smooth focus:scroll-auto lg:mx-auto  text bg-color">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="IELTS" />
-        <div className="flex flex-col lg:flex-row justify-center gap-12 lg:px-[4rem] my-[7rem] lg:h-[50rem] ">
-          <div
-            className=" w-[90%] lg:w-[50%] mx-auto lg:mx-0 lg:overflow-y-auto"
-            style={{
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-              WebkitOverflowScrolling: "touch",
-            }}
-            ref={leftRef}
-          >
+        <div className="flex flex-col lg:flex-row justify-center gap-12 lg:px-[4rem] mt-[7rem] ">
+          <div className=" w-[90%] lg:w-[50%] mx-auto lg:mx-0 " ref={leftRef}>
             <Image src="/ielts.webp" alt="IELTS" width={700} height={100} />
             <div>
               <h1 className=" text-xl font-semibold text-[#2d1d54] mt-4 mb-1">
