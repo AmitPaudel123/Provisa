@@ -8,7 +8,7 @@ const Form = () => {
   const backgroundImageUrl = `/contactbanner.webp`;
 
   return (
-    <>
+    <div className=" bg-color">
       <ImageCard
         imgsrc={`/appointmentimg.webp`}
         topic={`Books for Counseling`}
@@ -44,7 +44,7 @@ const Form = () => {
       <div className="my-[4rem]">
         <Location />
       </div>
-    </>
+    </div>
   );
 };
 

@@ -16,7 +16,7 @@ const Page = () => {
     });
   }, []);
   return (
-    <>
+    <div className="bg-color">
       <ImageCard imgsrc="/blog1.png" topic="Blogs" />
       <div
         className=" flex flex-col lg:flex-row lg:justify-center my-[7rem] gap-8 lg:gap-12 lg:h-[98rem] overflow-y-scroll"
@@ -44,7 +44,7 @@ const Page = () => {
           </div>{" "}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -9,7 +9,7 @@ const Page = () => {
   const backgroundImageUrl = `/contactbanner.webp`;
 
   return (
-    <div className="mt-[6rem]">
+    <div className="mt-[6rem] bg-color">
       <ImageCard
         imgsrc={"/contactbanner.webp"}
         topic={"Books For Counseling"}

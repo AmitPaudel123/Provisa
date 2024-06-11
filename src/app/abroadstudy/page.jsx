@@ -52,7 +52,7 @@ const images = [
 
 const ImageGrid = () => {
   return (
-    <>
+    <div className=" bg-color">
       <ImageCard topic={"Abroad Study"} imgsrc={"/abroadstudy.webp"} />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-[4rem] mb-6 mx-10 my-[4rem]">
         {images.map((image, index) => (
@@ -89,7 +89,7 @@ const ImageGrid = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

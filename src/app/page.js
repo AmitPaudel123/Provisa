@@ -11,7 +11,7 @@ import Testimonials from "./Components/Testi";
 const page = () => {
   return (
     <div
-      className=" bg-white overflow-x-hidden mb-[7rem]"
+      className=" bg-color overflow-x-hidden mb-[7rem]"
       style={{
         scrollbarWidth: "none",
         msOverflowStyle: "none",

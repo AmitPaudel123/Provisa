@@ -14,7 +14,7 @@ const Universities = () => {
     });
   }, []);
   return (
-    <div>
+    <div className=" bg-color">
       <div className="max-w-screen-xl mx-auto px-4 md:px-8 mt-[5rem]">
         <div className="flex flex-col items-center">
           <p className="text-[#2d1d54] font-bold text-2xl">Top Universities</p>
@@ -79,7 +79,6 @@ const Universities = () => {
                   height={150}
                 />
               </div>
-              {/* Add more images as needed */}
             </div>
           </Marquee>
         </div>

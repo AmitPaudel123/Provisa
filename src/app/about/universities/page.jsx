@@ -5,7 +5,7 @@ import Universities from "@/app/Components/Universities";
 
 const page = () => {
   return (
-    <div>
+    <div className=" bg-color">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={`Universities`} />
       <div className=" flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-12 pt-[7rem]">
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[20%]">

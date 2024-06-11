@@ -5,7 +5,7 @@ import Form from "../Components/Form";
 import Image from "next/image";
 const ServiceCard = ({ topic, heading, desc, imgg }) => {
   return (
-    <div>
+    <div className=" bg-color">
       <ImageCard imgsrc={"/serviceimg.webp"} topic={topic} />
       {/* {imgg ? (
         <div className=" flex justify-center mt-4">

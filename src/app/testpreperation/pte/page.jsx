@@ -38,10 +38,10 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="scroll-smooth focus:scroll-auto lg:w-[85%] lg:mx-auto text-ellipsis">
+    <div className="scroll-smooth focus:scroll-auto lg:mx-auto  text-ellipsis bg-color">
       <div>
         <ImageCard imgsrc="/tpreperation.webp" topic="PTE" />
-        <div className="flex flex-col lg:flex-row justify-center gap-[7rem] my-4 lg:h-[50rem]">
+        <div className="flex flex-col lg:flex-row justify-center  gap-[6rem] lg:px-[9rem] my-4 lg:h-[50rem]">
           <div
             className=" w-[90%] lg:w-[60%] mx-auto lg:mx-0 lg:overflow-y-auto"
             style={{
@@ -58,7 +58,7 @@ const Page = () => {
               height={100}
               className="  lg:w-[90%] h-[30rem]"
             />
-            <div>
+            <div className=" text-black">
               <h1 className=" text-xl font-semibold text-[#2d1d54] mt-8 mb-1">
                 Course Description
               </h1>

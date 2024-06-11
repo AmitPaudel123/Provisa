@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 const ContactCard = () => {
   return (
-    <div className=" bg-slate-100 p-4 rounded-md">
+    <div className=" bg-slate-100 text-black p-4 rounded-md shadow-sm">
       <h1 className=" font-semibold text-xl text-[#2d1d54] mb-3">About Us</h1>
       <div className=" flex flex-col gap-2">
         <Link href="/about" className=" text-effect">

@@ -15,12 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` bg-white ${inter.className} overflow-x-hidden`}>
+      <body className={` bg-color ${inter.className} overflow-x-hidden`}>
         <FloatingActionButton />
         <GoTop />
         <Navbar />
         {children}
-        <div className=" mt-[10rem]">
+        <div className=" pt-[10rem] bg-color">
           {" "}
           <Footer />
         </div>

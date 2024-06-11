@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  .bg-color {
+    @apply bg-gray-50;
+  }
   .top-nav {
     @apply text-sm;
   }
@@ -55,12 +58,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  background: white;
 }
 
 @layer utilities {

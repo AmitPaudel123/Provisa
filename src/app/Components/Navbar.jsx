@@ -17,13 +17,13 @@ import { RiCloseLine } from "react-icons/ri";
 import Link from "next/link";
 
 const Navbar = () => {
-  //for larger device while hovering
+  // for larger device while hovering
   const [showAbout, setShowAbout] = useState(false);
   const [showServices, setShowServices] = useState(false);
   const [showAbroadStd, setShowAbroadStd] = useState(false);
   const [showPreparation, setShowPreparation] = useState(false);
 
-  //for smaller and medium device whie clicking
+  // for smaller and medium device while clicking
   const [displayMenu, setDisplayMenu] = useState(false);
   const [displayAbout, setDisplayAbout] = useState(false);
   const [displayServices, setDisplayServices] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="shadow-slate-400 shadow-sm fixed top-0 z-[999] w-full bg-white ">
+    <nav className="shadow-slate-400 shadow-sm fixed top-0 z-[999] w-full bg-white">
       {/* Navbar for larger device----------------------------------------------------------- */}
       {/* top navbar */}
       {hideNav && (
@@ -120,13 +120,16 @@ const Navbar = () => {
       )}
 
       {/* link section */}
-      <div className="lg:w-[80%]  mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly  mt-2 sticky top-0 py-1 z-[999999]">
+      <div
+        className={`lg:w-[80%] mx-auto hidden lg:flex justify-center gap-5 xl:justify-evenly mt-2 ${
+          hideNav ? "" : "fixed"
+        } top-0 py-1 z-[999999] bg-white shadow-sm`}
+      >
         <Link href="/" className="pb-4 cursor-pointer text-black">
           Home
         </Link>
         <Link
           href="/about"
-          div
           className=" flex items-center gap-1 relative pb-4 cursor-pointer text-black"
           onMouseOver={() => {
             setShowAbout(true);
@@ -274,6 +277,7 @@ const Navbar = () => {
           Contact Us
         </Link>
       </div>
+
       {/* -------------------------------------------------------------- */}
 
       {/* Navbar for smaller and medium size device */}

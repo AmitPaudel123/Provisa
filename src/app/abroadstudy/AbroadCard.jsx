@@ -26,7 +26,7 @@ const AbroadCard = ({
     });
   }, []);
   return (
-    <div className=" mt-[12rem] text">
+    <div className=" mt-[12rem] text bg-color">
       <ImageCard topic={topic} imgsrc={imgsrc} />
       <div
         className=" flex flex-col lg:flex-row lg:justify-center gap-6 lg:gap-12 pt-[3rem] "

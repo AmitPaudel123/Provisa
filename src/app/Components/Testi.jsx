@@ -12,7 +12,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute bottom-[-3rem] right-0 text-black bg-white h-9 w-14 text-xl rounded-md flex hover:bg-slate-800 hover:text-white justify-center items-center cursor-pointer"
+      className="absolute bottom-[-3rem] right-0 text-black bg-white h-9 w-14 text-xl rounded-md flex justify-center items-center cursor-pointer"
       onClick={onClick}
     >
       <IoIosArrowForward />
@@ -24,7 +24,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div
-      className="absolute bottom-[-3rem] left-0 text-black hover:bg-slate-800 hover:text-white bg-white h-9 w-14 text-xl rounded-md flex justify-center items-center cursor-pointer"
+      className="absolute bottom-[-3rem] left-0 text-black bg-white h-9 w-14 text-xl rounded-md flex justify-center items-center cursor-pointer"
       onClick={onClick}
     >
       <IoIosArrowBack />

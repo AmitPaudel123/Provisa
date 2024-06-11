@@ -30,9 +30,9 @@ const Page = () => {
   ];
 
   return (
-    <>
+    <div className=" bg-color">
       <ImageCard topic={"Test Preparation"} imgsrc={"/tpreperation.webp"} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-[4rem] mb-6 mx-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-[4rem] mb-6 mx-10 bg-color ">
         {images.map((image, index) => (
           <div
             key={index}
@@ -67,7 +67,7 @@ const Page = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

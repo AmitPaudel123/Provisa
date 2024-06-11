@@ -4,10 +4,10 @@ import ImageCard from "@/app/Components/ImageCard";
 import ContactCard from "../ContactCard";
 const page = () => {
   return (
-    <>
+    <div className=" bg-color">
       {" "}
       <ImageCard imgsrc={"/aboutimg.webp"} topic={`Our Team`} />
-      <div className=" flex flex-col items-center lg:flex-row lg:justify-center gap-10 lg:gap-12 my-[7rem]">
+      <div className=" flex flex-col items-center lg:items-start lg:flex-row lg:justify-center gap-10 lg:gap-12 py-[5rem]">
         <div className=" w-[90%] mx-auto lg:mx-0 lg:w-[20%]">
           <ContactCard />
         </div>
@@ -24,7 +24,7 @@ const page = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

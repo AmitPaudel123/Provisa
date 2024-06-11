@@ -4,7 +4,7 @@ import React from "react";
 import ContactCard from "../ContactCard";
 const page = () => {
   return (
-    <div className="text">
+    <div className="text bg-white">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={"Message From M.D"} />
       <div className=" flex flex-col lg:flex-row lg:justify-center lg:gap-12 gap-10 pt-[5rem] clear-start text-slate-700">
         <div className="w-[90%] mx-auto lg:mx-0 lg:w-[20%]">

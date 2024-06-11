@@ -3,7 +3,7 @@ import Faq from "../Components/Faq";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-color">
       <Faq />
     </div>
   );

@@ -4,7 +4,7 @@ import ContactCard from "./ContactCard";
 import Image from "next/image";
 const page = () => {
   return (
-    <div className=" text ">
+    <div className=" text bg-color">
       <ImageCard imgsrc={"/aboutimg.webp"} topic={`About Us`} />
       <div className=" flex flex-col lg:flex-row lg:justify-center gap-10 lg:gap-12 pt-[5rem]">
         <div className=" w-[90%] mx-auto lg:mx-0 md:w-[20%]">

@@ -4,7 +4,7 @@ import ImageCard from "../Components/ImageCard";
 
 const page = () => {
   return (
-    <div>
+    <div className=" bg-color my-0">
       <ImageCard imgsrc={"/serviceimg.webp"} topic={`Our Services`} />
       <AssistCard />
     </div>
